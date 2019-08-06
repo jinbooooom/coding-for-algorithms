@@ -1,0 +1,9 @@
+push.sh
+.idea/*
+data/*
+**/.vs/*
+**/ConsoleApplication1/*
+
+t/*
+
+
