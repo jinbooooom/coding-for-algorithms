@@ -13,7 +13,9 @@ class Sort:
                     arr[j], arr[j + 1] = arr[j + 1], arr[j]
         return arr
 
+
 if __name__ == "__main__":
     f = Sort()
     arr = [9, 8, 5, 6, 3]
+    print("原始数组：{}\n排序过程：".format(arr))
     print(f.bubbleSort(arr))
