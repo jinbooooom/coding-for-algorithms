@@ -1,38 +1,37 @@
 # -*- coding:utf-8 -*-
-import random
+
 
 class Sort:
-    def insertSort(self, l):
-        for i in range(len(l) - 1):  # 插入 len(l)-1 次就排序完毕
-            t = l[i + 1]
-            for j in range(i, -1, -1):  # i～0
-                if l[j] >= t:
-                    l[j + 1] = l[j]
-                else:
-                    l[j + 1] = t
-                    break
-                l[j] = t
-        return l
+    def insertSort(self, arr):
+        for i in range(1, len(arr)):  # 需要 len(l)-1 轮插入才排序完毕
+            t = arr[i]
+            j = i - 1
+            # 每一轮跟排序好的部分最多比较 i 次，而排序好的部分是 arr[:i]
+            while(j >= 0 and arr[j] > t):
+                arr[j+1] = arr[j]  # 前面一个数 arr[j] 大于 t，就把该数后移一位
+                j -= 1
+            arr[j+1] = t
+            print(arr)
+        return arr
 
-    def insertSort2(self, l):  # python 风格
-        for i in range(len(l) - 1):
-            t = l[i + 1]
-            for j in range(i + 1):
-                if l[j] >= t:
-                    del l[i + 1]
-                    l.insert(j, t)
+    def insertSort2(self, arr):
+        """
+        python 风格插入排序
+        """
+        for i in range(1, len(arr)):
+            t = arr[i]
+            for j in range(i):
+                if arr[j] > t:
+                    del arr[i]
+                    arr.insert(j, t)
+                    print(arr)
                     break
-        return l
-
+        return arr
 
 if __name__ == "__main__":
-    l = [9, 8, 5, 6, 3]
+    arr = [9, 8, 5, 6, 3]
     f = Sort()
-    l = [random.randint(0, 99) for _ in range(10)]
-    print(l)
-    print(f.insertSort(l))
-    print(bool(set(f.insertSort(l)) == set(l)))
-    print(f.insertSort2(l))
-    print(bool(set(f.insertSort2(l)) == set(l)))
-    for i in range(5, -1, -1):
-        print(i)
+    f.insertSort(arr)
+    print('\npython风格插入排序：')
+    arr = [9, 8, 5, 6, 3]
+    f.insertSort2(arr)
