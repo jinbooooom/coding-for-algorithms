@@ -15,7 +15,7 @@ class Solution:
     def duplicate(self, numbers, duplication):
         """
         提示：
-        数组长度是 n，数组元素范围是 0 ~ n-1，如果使 array[index] = index，那就一个萝卜一个坑，没有重复的了。
+        数组长度是 n，数组元素范围是 0 ~ n-1，如果数组经处理满足 array[index] = index，那就一个萝卜一个坑，没有重复的了。
         """
         # write code here
 

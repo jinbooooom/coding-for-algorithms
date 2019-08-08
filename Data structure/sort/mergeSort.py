@@ -18,12 +18,14 @@ class Sort:
         """
         合并有序的左子序列 arr[start:mid + 1] 与右子序列 arr[mid + 1:end + 1]，并使之有序。
         """
+
         left_start = start
         left_end = mid
         right_start = mid + 1
         right_end = end
 
         tmp = []
+
 
         while(left_end >= left_start and right_end >= right_start):
             if arr[left_start] <= arr[right_start]:
