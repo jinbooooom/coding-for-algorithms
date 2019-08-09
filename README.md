@@ -5,8 +5,8 @@
 
 ## 目录
 - 数据结构
-- [栈](./Data structure/stack/stack.py)
-- [队列](./Data structure/deque/deque.py)
+    - [栈](./Data structure/stack/stack.py)
+    - [队列](./Data structure/deque/deque.py)
         - [双端队列](./Data structure/queue/deque.py)
         - [循环队列](./Data structure/queue/loopqueue.py)
     - 链表
