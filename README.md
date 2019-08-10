@@ -2,13 +2,14 @@
 - 数据结构
 - 剑指 offer 第二版
 
-[栈](/Data structure/stack/stack.py)
+[栈](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/stack/stack.py)
+
 ## 目录
 - 数据结构
-    - [栈](/Data structure/stack/stack.py)
-    - [队列](./Data structure/deque/deque.py)
-        - [双端队列](Data structure/queue/deque.py)
-        - [循环队列](./Data structure/queue/loopqueue.py)
+    - [栈](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/stack/stack.py)
+    - [队列](./Data%20structure/deque/deque.py)
+        - [双端队列](Data%20structure/queue/deque.py)
+        - [循环队列](./Data%20structure/queue/loopqueue.py)
     - 链表
         - [单链表](./Data structure/list/linkedList.py)
         - [双向链表](./Data structure/list/doubleLinkedList.py)
