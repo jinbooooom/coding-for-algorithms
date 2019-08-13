@@ -1,4 +1,12 @@
 # -*- coding:utf-8 -*-
+"""
+数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。
+由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。
+如果不存在则输出0。
+"""
+
+
 class Solution:
 
     def MoreThanHalfNum_Solution1(self, numbers):
@@ -39,6 +47,7 @@ class Solution:
 
     def MoreThanHalfNum_Solution3(self, numbers):
         """
+        法三：
         仿照快排里的 partition，找任意第 k 小的数字。
         数组中出现次数超过一半的数字，必然是中位数，然后找中位数就好了。
         """
