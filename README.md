@@ -4,7 +4,7 @@
 - [腾讯精选练习 50 题](https://leetcode-cn.com/problemset/50/)
         
 #目录
-- ##[数据结构](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/README.md)
+ - [数据结构](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/README.md)
     - [栈](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/stack/stack.py)
     - [队列](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/queue)
         - [普通队列](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/queue/queue.py)
@@ -13,15 +13,15 @@
     - [链表](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/list/linkedList.py)
     - [二叉树](https://github.com/jinbooooom/coding-for-interview/tree/master/Data%20structure/tree/BinaryTree.py)
     - [内排序](https://github.com/jinbooooom/coding-for-interview/tree/master/Data%20structure/sort)
-    - [冒泡排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/bubbleSort.py)
-    - [插入排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/insertSort.py)
-    - [选择排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/selectSort.py)
-    - [希尔排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/shellSort.py)
-    - [快速排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/quickSort.py)
-    - [归并排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/mergeSort.py)
-- ## [剑指 offer]
+        - [冒泡排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/bubbleSort.py)
+        - [插入排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/insertSort.py)
+        - [选择排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/selectSort.py)
+        - [希尔排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/shellSort.py)
+        - [快速排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/quickSort.py)
+        - [归并排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/mergeSort.py)
+- 剑指 offer
     - [3-数组中重复的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication.py)
-        - [扩展](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication2.py)
+        - [不修改数组找重复的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication2.py)
     - [4-二维数组中的查找](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/4-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/find.py)
     - [5-替换空格](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/5-%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/replaceBlank.py)
     - [6-反向打印链表](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/6-%E5%8F%8D%E5%90%91%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/6%20printListFromTailToHead.py)
