@@ -3,7 +3,7 @@
 - 剑指 offer 第二版
 - [腾讯精选练习 50 题](https://leetcode-cn.com/problemset/50/)
         
-#目录
+# 目录
  - [数据结构](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/README.md)
     - [栈](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/stack/stack.py)
     - [队列](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/queue)
@@ -64,8 +64,8 @@
     - [40-最小的k个数](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/40-%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/GetLeastNumbers_Solution.py)
     - [42-连续子数组的最大和](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/FindGreatestSumOfSubArray.py)
     - [45-把数组排成最小的数](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/45-%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/PrintMinNumber.py)
-    - []()
-    - []()
+- 腾讯精选练习 50 题
+    - [2-两数相加](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/)
     - []()
     - []()
     - []()
