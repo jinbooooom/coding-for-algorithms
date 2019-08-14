@@ -1,6 +1,7 @@
 push.sh
 .idea/*
 data/*
+**/__pycache__/*
 **/.vs/*
 **/ConsoleApplication1/*
 
