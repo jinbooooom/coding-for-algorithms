@@ -9,7 +9,7 @@ class Solution:
     def EntryNodeOfLoop(self, pHead):
         """
         提示：
-        假设有环，且知道环中节点的个数，那么设置两个指针 p1, p2 分别指向头节点，现在使 p2 先移动 n 步，p1 不动，
+        假设有环，且知道环中节点的个数设为 n，那么设置两个指针 p1, p2 分别指向头节点，现在使 p2 先移动 n 步，p1 不动，
         再使 p1, p2 同时移动，那么当 p1, p2 相遇时，p1 指针指向的节点就是入口节点。
 
         如何求环中节点个数 n?
@@ -82,6 +82,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    # 测试实例
     import sys
     sys.path.append("..")
     sys.path.append("./")

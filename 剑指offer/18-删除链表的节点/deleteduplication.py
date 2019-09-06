@@ -14,6 +14,12 @@ class ListNode:
 
 class Solution:
     def deleteDuplication(self, pHead):
+        """
+        提示：
+        对该题中一个排序的链表，如果它的头节点 Head 与下一个节点 pNext 不同，
+        那么 Head 一定是不会重复的，但 pNext 就不一定了。
+        因此再递归处理以 pNext 为头节点的子链表，使该子链表返回的头节点一定不重复。
+        """
         # write code here
 
         if pHead is None or pHead.next is None:

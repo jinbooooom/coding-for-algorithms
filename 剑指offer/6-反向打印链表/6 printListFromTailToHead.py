@@ -18,7 +18,7 @@ class Solution:
         # write code here
 
         ArrayList = []
-        while(listNode):
+        while listNode:
             ArrayList.insert(0, listNode.val)
             listNode = listNode.next
         return ArrayList
