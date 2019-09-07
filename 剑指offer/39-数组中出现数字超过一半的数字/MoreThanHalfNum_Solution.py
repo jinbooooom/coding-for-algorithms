@@ -57,21 +57,18 @@ class Solution:
 
     def kthmin(self, arr, k):
         """
-        在数组 arr 中找第 k 小数，k = 0 为找最小的数字
+        在数组 arr 中找第 k 小数，k = 0 为找最小的数字。
+        对比一下这种写法与《40-最小的 k 个数》中的函数 kth_partition 在处理上的异同
         """
         key = arr[0]
         arrLeft = [x for x in arr if x < key] + [x for x in arr if x == key][:-1]
         arrRight = [x for x in arr if x > key]
         indexKey = len(arrLeft)
-        # print(arrLeft, key, arrRight)
         if k == indexKey:
-            # print("k, indexKey, key", k, indexKey, key)
             return key
         elif k > indexKey:
-            # print(arrRight, k - indexKey - 1)
             return self.kthmin(arrRight, k - indexKey - 1)
         else:
-            # print(arrLeft[:-1], k)
             return self.kthmin(arrLeft, k)
 
 

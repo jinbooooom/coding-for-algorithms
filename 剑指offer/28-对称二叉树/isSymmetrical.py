@@ -19,7 +19,7 @@ class Solution:
         # write code here
         if pRoot is None:
             return True
-        if pRoot and pRoot.left is None and pRoot.right is None:
+        if pRoot and pRoot.left is None and pRoot.right is None:  # 树只有一个节点，自然是对称的
             return True
         return self.search(pRoot.left, pRoot.right)
 
@@ -28,9 +28,9 @@ class Solution:
         用 search() 函数判断对称节点 pl, pr 是否相等，并且找到 pl, pr 的子节点对应的对称节点
         :param pl, param pr: 这两个指针不同时为 None
         """
-        if pl is None and pr is None:
+        if pl is None and pr is None:  # 都为空节点，对称
             return True
-        if (pl is None and pr) or (pl and pr is None):
+        if (pl is None and pr) or (pl and pr is None):  # 一个为空节点一个不为空节点，就不对称
             return False
         return self.isSame(pl, pr) and self.search(pl.right, pr.left) and self.search(pl.left, pr.right)
 

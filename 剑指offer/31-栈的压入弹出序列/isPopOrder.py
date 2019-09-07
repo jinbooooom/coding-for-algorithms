@@ -11,7 +11,7 @@
 class Solution:
     def IsPopOrder(self, pushV, popV):
         """
-        模拟入栈和弹出操作，就知道了
+        按照 popV 里的顺序出栈，如果能把 pushV 出栈成空栈，说明 popV 是一种可能的弹出顺序。
         """
         # write code here
         p = 0

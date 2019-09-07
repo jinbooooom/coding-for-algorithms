@@ -36,7 +36,7 @@ class Solution:
         '3' > ''  # True
 
         定义新的比较规则:
-        s1 > s2 ?
+        s1 > s2 的比较结果与 s1s2 拼接的字符 > s2s1 拼接的字符的比较结果一致。
         """
         if s1 + s2 > s2 + s1:
             return 1

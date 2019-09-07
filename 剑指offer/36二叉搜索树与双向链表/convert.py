@@ -26,6 +26,7 @@ class Solution:
         if pRootOfTree is None:
             return None
         self.search(pRootOfTree)
+        # 排序双向链表的头节点是二叉树的最左边节点。
         return self.getLeft(pRootOfTree)
 
     def search(self, root):
@@ -34,7 +35,7 @@ class Solution:
         """
         if root.left:
             right = self.getRight(root.left)  # 先保存左子树的最右（大）节点
-            self.search(root.left)  # 此时左子树已经转换成一个排序的双向链表
+            self.search(root.left)  # 此时左子树已经转换成一个排序的双向链表。用递归就要假设子问题已经处理好了。
             root.left = right
             right.right = root
         if root.right:

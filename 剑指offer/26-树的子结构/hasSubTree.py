@@ -10,6 +10,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+
 class Solution:
 
     def HasSubtree(self, pRoot1, pRoot2):
