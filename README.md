@@ -59,7 +59,7 @@
     - [33-二叉搜索树的后序遍历](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/33-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86/verifySquenceOfBST.py)
     - [34-二叉树中和为某一值的路径](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/34-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/findPath.py)
     - [36二叉搜索树与双向链表](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/36%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%8E%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/convert.py)
-    - [38-字符串的排列](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/38-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/pailie.py)
+    - [38-字符串的排列](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/38-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/Permutation.py)
     - [39-数组中出现数字超过一半的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/39-%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%95%B0%E5%AD%97%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/MoreThanHalfNum_Solution.py)
     - [40-最小的k个数](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/40-%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/GetLeastNumbers_Solution.py)
     - [42-连续子数组的最大和](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/FindGreatestSumOfSubArray.py)
