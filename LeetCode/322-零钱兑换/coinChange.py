@@ -31,13 +31,15 @@ class Solution:
                             0                       if i == 0
         dp(i) = /
                \
-                min(dp[i], dp[i - coin_j] + 1)      if i >= coin_j，其中 coin_j 属于 coins。
+                min(dp[i], dp[i - coin] + 1)      if i >= coin，其中 coin 属于 coins。
 
         """
+        # 使 amount+1 填充备忘录 dp，如果 dp 里的数据没有修改，那么一定大于 amount。
+        # 所以在 return 的时候可以作判断，如果 dp[i] 未被修改，
+        # 说明找不到合适的硬币凑成该金额，返回 -1 就行。
         dp = [amount + 1 for x in range(amount + 1)]
         dp[0] = 0
         for i in range(1, amount + 1):
-            cost = float('inf')
             for coin in coins:
                 if i >= coin:
                     dp[i] = min(dp[i], dp[i - coin] + 1)
