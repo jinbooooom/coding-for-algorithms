@@ -28,7 +28,29 @@ class Solution:
                     max = result
         return max
 
+    def FindGreatestSumOfSubArray2(self, array):
+        """
+        提示：
+        动态规划求解：
+        用 f(i) 表示以第 i 个数字结尾的子数组的最大和，那么我们需要求出 max[f(i)]，其中 i 属于闭区间 [0, n-1]。
+        则求解方程为：
+
+                 array[i]               if i == 0 or f(i-1) <= 0
+        f(i) = /
+               \
+                f(i-1) + array[i]      if i != 0 and f(i-1) > 0
+
+        """
+        dp = [-1] * len(array)
+        for i in range(len(array)):
+            if i == 0 or dp[i-1] <= 0:
+                dp[i] = array[i]
+            else:
+                dp[i] = dp[i-1] + array[i]
+        return max(dp)
+
 
 f = Solution()
 arr = [1, -2, 3, 10, -4, 7, 2, -5]
 print(f.FindGreatestSumOfSubArray(arr))
+print(f.FindGreatestSumOfSubArray2(arr))

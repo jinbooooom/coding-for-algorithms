@@ -8,9 +8,9 @@
 class Solution:
     def GetLeastNumbers_Solution(self, tinput, k):
         """
-        基于快速排序的 partition。 将数组 input 划分成：
-        input[: k] 都小于第 k 小的数，input[k+1:] 都是大于第 k 小的数，
-        但 input[: k] 部分是无需的，牛客网返回的最小的 k 个数都是有序输出。
+        基于快速排序的 partition。 将数组 input 划分成两部分：
+        input[: k] 都小于第 k 小的数，input[k+1:] 都大于第 k 小的数，
+        但 input[: k] 部分是无序的，牛客网返回的最小的 k 个数都是有序输出。
         """
         # write code here
         if k > len(tinput) or k == 0:
