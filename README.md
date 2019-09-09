@@ -3,7 +3,7 @@
 - [剑指 offer 第二版](https://github.com/jinbooooom/coding-for-interview#%E5%89%91%E6%8C%87-offer)
 - [收集经典题目](https://github.com/jinbooooom/coding-for-interview#%E6%94%B6%E9%9B%86%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE)
 - 互联网公司笔试真题
-- [LeetCode](https://leetcode-cn.com/problemset/50/)
+- [LeetCode](https://github.com/jinbooooom/coding-for-interview#leetcode)
 - [acmcoder](https://github.com/jinbooooom/coding-for-interview#acmcoder)
 
 # 目录
