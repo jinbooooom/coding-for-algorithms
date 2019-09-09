@@ -41,51 +41,14 @@ class Solution:
         即 sum(P) = (sum(nums) + S)/2
         那么问题又转化为从 nums 中挑选若干个数，使其和为 (sum(nums) + S)/2，有多少种挑法？
 
-
-
-        :param nums:
-        :param S:
-        :return:
         """
-        if sum(nums) < S or (sum(nums) + S) % 2 == 1:
-            return 0
-        P = (sum(nums) + S) // 2
-        dp = [[0 for _ in range(P + 1)] for _ in range(len(nums))]
-
-        for i in range(len(nums)):
-            for j in range(1, P + 1):
-                if i == 0:
-                    dp[i][j] = 1 if nums[i] == j else 0
-                elif j == 0:
-                    dp[i][j] = 1
-                elif j > nums[i]:
-                    print(dp[i-1][j] , dp[i][j - nums[i]])
-                    dp[i][j] = dp[i-1][j] + dp[i][j - nums[i]]
-
-        return dp[-1][-1]
-
-    def findTargetSumWays2(self, nums: list, S: int) -> int:
         if sum(nums) < S or (sum(nums) + S) % 2 == 1:
             return 0
         P = (sum(nums) + S) // 2
         dp = [1] + [0 for _ in range(P)]
         for num in nums:
-            for j in range(P,num-1,-1):
+            for j in range(P, num-1, -1):
                 dp[j] += dp[j - num]
-        return dp[P]
-
-    def findTargetSumWays3(self, nums: list, S: int) -> int:
-        if sum(nums) < S or (sum(nums) + S) % 2 == 1:
-            return 0
-        P = (sum(nums) + S) // 2
-        dp = [1] + [0 for _ in range(P)]
-        for j in range(1, P + 1):
-            cap = j
-            for num in nums:
-                if j >= num and cap >= num:
-                    cap = cap-num
-                    dp[j] += dp[cap - num]
-        print(dp)
         return dp[P]
 
 
@@ -95,4 +58,4 @@ if __name__ == "__main__":
     nums2 = [1]
     S = 3
     S2 = 1
-    print(f.findTargetSumWays3(nums, S))
+    print(f.findTargetSumWays(nums, S))

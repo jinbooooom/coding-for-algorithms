@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*
-from typing import List
 """
 https://leetcode-cn.com/problems/partition-equal-subset-sum
 https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/0-1-bei-bao-wen-ti-xiang-jie-zhen-dui-ben-ti-de-yo/
@@ -23,7 +22,7 @@ https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/0-1-bei-bao
 
 
 class Solution:
-    def canPartition(self, nums: List[int]) -> bool:
+    def canPartition(self, nums: list) -> bool:
         """
         提示:
         可以把这道题转换为 0-1 背包问题：
