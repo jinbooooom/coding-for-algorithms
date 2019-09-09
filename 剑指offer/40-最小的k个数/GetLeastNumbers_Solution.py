@@ -45,7 +45,8 @@ class Solution:
 if __name__ == "__main__":
     f = Solution()
     arr = [6, 8, 5, 3, 9, 2, 7, 4, 1]
+    arr2 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     k = 5
-    L = f.GetLeastNumbers_Solution(arr, k)
+    L = f.GetLeastNumbers_Solution(arr2, k)
     print(L[:k])
 
