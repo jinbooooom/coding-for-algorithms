@@ -4,9 +4,10 @@
 - 收集经典题目
 - 互联网公司笔试真题
 - [LeetCode](https://leetcode-cn.com/problemset/50/)
+- acmcoder
         
 # 目录
- - [数据结构](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/README.md)
+### [数据结构](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/README.md)
     - [栈](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/stack/stack.py)
     - [队列](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/queue)
         - [普通队列](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/queue/queue.py)
@@ -21,7 +22,7 @@
         - [希尔排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/shellSort.py)
         - [快速排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/quickSort.py)
         - [归并排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/mergeSort.py)
-- 剑指 offer
+### 剑指 offer
     - [3-数组中重复的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication.py)
         - [不修改数组找重复的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication2.py)
     - [4-二维数组中的查找](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/4-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/find.py)
@@ -68,14 +69,14 @@
     - [45-把数组排成最小的数](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/45-%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/PrintMinNumber.py)
 
 
-- 收集经典题目
+### 收集经典题目
     - [1-01背包无价值](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/1-01%E8%83%8C%E5%8C%85%E6%97%A0%E4%BB%B7%E5%80%BC/backPack.py)
     - [2-01背包有价值](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/2-01%E8%83%8C%E5%8C%85%E6%9C%89%E4%BB%B7%E5%80%BC/backPack2.py)
     - [3-完全背包](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/3-%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85/backPage.py)
     - [5-完全背包返回方案数](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/5-%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E8%BF%94%E5%9B%9E%E6%96%B9%E6%A1%88%E6%95%B0/backPage.py)
 
 
-- LeetCode
+### LeetCode
     - [2-两数相加](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/addTwoNumbers.py)
     - [5-最长回文子串](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/5-%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/longestPalindrome.py)
     - [35-搜索插入位置](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/searchInsert.py)
@@ -96,6 +97,10 @@
     - [416-分割等和子集](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86/canPartition.py)
     - [474-一和零](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/474-%E4%B8%80%E5%92%8C%E9%9B%B6/oneAndZero.py)
     - [494-目标和](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/494-%E7%9B%AE%E6%A0%87%E5%92%8C/findTargetSumWays.py)
+
+### acmcoder
+- [1-约德尔测试](https://github.com/jinbooooom/coding-for-interview/blob/master/acmcoder/1-%E7%BA%A6%E5%BE%B7%E5%B0%94%E6%B5%8B%E8%AF%95/yueDeErCeShi.py)
+- [2-格子游戏](https://github.com/jinbooooom/coding-for-interview/blob/master/acmcoder/2-%E6%A0%BC%E5%AD%90%E6%B8%B8%E6%88%8F/geZiYouXi.py)
 
 
     
