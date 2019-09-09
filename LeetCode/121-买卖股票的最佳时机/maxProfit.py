@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+from typing import List
 """
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
 

@@ -1,4 +1,5 @@
 # -*- coding:itf-8 -*-
+from typing import List
 """
 https://leetcode-cn.com/problems/intersection-of-two-arrays-ii
 

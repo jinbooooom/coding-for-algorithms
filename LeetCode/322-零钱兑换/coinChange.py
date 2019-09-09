@@ -19,10 +19,11 @@ https://leetcode-cn.com/problems/coin-change
 你可以认为每种硬币的数量是无限的。
 
 """
+from typing import List
 
 
 class Solution:
-    def coinChange(self, coins, amount) -> int:
+    def coinChange(self, coins: List[int], amount: int) -> int:
         """
         提示：
         完全背包问题，用动态规划求解
@@ -44,6 +45,7 @@ class Solution:
                 if i >= coin:
                     dp[i] = min(dp[i], dp[i - coin] + 1)
         return -1 if dp[amount] > amount else dp[amount]
+
 
 if __name__ == "__main__":
     f = Solution()

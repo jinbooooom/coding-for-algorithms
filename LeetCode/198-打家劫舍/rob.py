@@ -23,7 +23,7 @@ https://leetcode-cn.com/problems/house-robber
 
 
 class Solution:
-    def rob(self, nums: List[int]) -> int:
+    def rob(self, nums: list) -> int:
         """
         提示：动态规划
         令 dp[i] 为抢了在闭区间 [0, i] 的房子。则状态转移方程为：
