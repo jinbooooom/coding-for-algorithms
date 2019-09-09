@@ -27,7 +27,7 @@ class Solution:
 
     def MoreThanHalfNum_Solution2(self, numbers):
         """
-        法二：同法一，但不需要用字典存储每个数字出现的次数，只需要用两个变量就可以了。
+        法二：Boyer-Moore 投票算法
         """
         mcnt = 0
         mkey = 0

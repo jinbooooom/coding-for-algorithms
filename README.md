@@ -1,7 +1,9 @@
 ﻿# 主要内容：
 - 数据结构
 - 剑指 offer 第二版
-- [腾讯精选练习 50 题](https://leetcode-cn.com/problemset/50/)
+- 收集经典题目
+- 互联网公司笔试真题
+- [LeetCode](https://leetcode-cn.com/problemset/50/)
         
 # 目录
  - [数据结构](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/README.md)
@@ -64,7 +66,36 @@
     - [40-最小的k个数](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/40-%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/GetLeastNumbers_Solution.py)
     - [42-连续子数组的最大和](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/FindGreatestSumOfSubArray.py)
     - [45-把数组排成最小的数](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/45-%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/PrintMinNumber.py)
-- 腾讯精选练习 50 题
+
+
+- 收集经典题目
+    - [1-01背包无价值](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/1-01%E8%83%8C%E5%8C%85%E6%97%A0%E4%BB%B7%E5%80%BC/backPack.py)
+    - [2-01背包有价值](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/2-01%E8%83%8C%E5%8C%85%E6%9C%89%E4%BB%B7%E5%80%BC/backPack2.py)
+    - [3-完全背包](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/3-%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85/backPage.py)
+    - [5-完全背包返回方案数](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/5-%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E8%BF%94%E5%9B%9E%E6%96%B9%E6%A1%88%E6%95%B0/backPage.py)
+
+
+- LeetCode
     - [2-两数相加](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/addTwoNumbers.py)
+    - [5-最长回文子串](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/5-%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/longestPalindrome.py)
+    - [35-搜索插入位置](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/searchInsert.py)
+    - [62-不同路径](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/62-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/uniquePaths.py)
+    - [64-最小路径和](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/64-%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/minPathSum.py)
+    - [69-x的平方根](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/69-x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9/mySqrt.py)
+    - [75-颜色排序](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/75-%E9%A2%9C%E8%89%B2%E6%8E%92%E5%BA%8F/sortColors.py)
+    - [97-交错字符串](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/97-%E4%BA%A4%E9%94%99%E5%AD%97%E7%AC%A6%E4%B8%B2/isInterleave.py)
+    - [121-买卖股票的最佳时机](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/121-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA/maxProfit.py)
+    - [167-两数之和2-输入有序数组](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C2-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/twoSum.py)
+    - [198-打家劫舍](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/198-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/rob.py)
+    - [322-零钱兑换](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2/coinChange.py)
+    - [324-摆动排序2](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/324-%E6%91%86%E5%8A%A8%E6%8E%92%E5%BA%8F2/wiggle-sort-ii.py)
+    - [349-350-两个数组的交集](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/349-350-%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/interSection.py)
+        - [350-两个数组的交集2](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/349-350-%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/interSection2.py)
+    - [367-有效的完全平方数](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/367-%E6%9C%89%E6%95%88%E7%9A%84%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/isPerfectSquare.py)
+    - [374-猜数字大小](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/374-%E7%8C%9C%E6%95%B0%E5%AD%97%E5%A4%A7%E5%B0%8F/guessNumber.py)
+    - [416-分割等和子集](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86/canPartition.py)
+    - [474-一和零](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/474-%E4%B8%80%E5%92%8C%E9%9B%B6/oneAndZero.py)
+    - [494-目标和](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/494-%E7%9B%AE%E6%A0%87%E5%92%8C/findTargetSumWays.py)
+
 
     
