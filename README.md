@@ -2,7 +2,7 @@
 - [数据结构](https://github.com/jinbooooom/coding-for-interview#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 - [剑指 offer 第二版](https://github.com/jinbooooom/coding-for-interview#%E5%89%91%E6%8C%87-offer)
 - [收集经典题目](https://github.com/jinbooooom/coding-for-interview#%E6%94%B6%E9%9B%86%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE)
-- 互联网公司笔试真题
+- [互联网公司笔试真题]()
 - [LeetCode](https://github.com/jinbooooom/coding-for-interview#leetcode)
 - [acmcoder](https://github.com/jinbooooom/coding-for-interview#acmcoder)
 
@@ -74,6 +74,10 @@
 - [2-01背包有价值](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/2-01%E8%83%8C%E5%8C%85%E6%9C%89%E4%BB%B7%E5%80%BC/backPack2.py)
 - [3-完全背包](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/3-%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85/backPage.py)
 - [5-完全背包返回方案数](https://github.com/jinbooooom/coding-for-interview/blob/master/collections/5-%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E8%BF%94%E5%9B%9E%E6%96%B9%E6%A1%88%E6%95%B0/backPage.py)
+
+
+### 互联网公司笔试真题
+- [1-电话号码分身_小米2017.py](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017.py)
 
 
 ### LeetCode
