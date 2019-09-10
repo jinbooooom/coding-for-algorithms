@@ -2,7 +2,7 @@
 - [数据结构](https://github.com/jinbooooom/coding-for-interview#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 - [剑指 offer 第二版](https://github.com/jinbooooom/coding-for-interview#%E5%89%91%E6%8C%87-offer)
 - [收集经典题目](https://github.com/jinbooooom/coding-for-interview#%E6%94%B6%E9%9B%86%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE)
-- [互联网公司笔试真题]()
+- [互联网公司笔试真题](https://github.com/jinbooooom/coding-for-interview#%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98)
 - [LeetCode](https://github.com/jinbooooom/coding-for-interview#leetcode)
 - [acmcoder](https://github.com/jinbooooom/coding-for-interview#acmcoder)
 
@@ -77,7 +77,7 @@
 
 
 ### 互联网公司笔试真题
-- [1-电话号码分身_小米2017.py](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017.py)
+- [1-电话号码分身_小米2017](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017.py)
 
 
 ### LeetCode
