@@ -50,10 +50,9 @@ class Solution:
         for s in strs:
             s0 = s.count('0')
             s1 = s.count('1')
-            for i in range(m, -1, -1):
-                for j in range(n, -1, -1):
-                    if i >= s0 and j >= s1:
-                        dp[i][j] = max(dp[i][j], 1 + dp[i - s0][j - s1])
+            for i in range(m, s0 - 1, -1):
+                for j in range(n, s1 - 1, -1):
+                    dp[i][j] = max(dp[i][j], 1 + dp[i - s0][j - s1])
         return dp[m][n]
 
 

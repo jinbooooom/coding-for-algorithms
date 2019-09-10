@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-from typing import List
 """
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
 
@@ -19,17 +18,19 @@ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
 
 """
+from typing import List
+
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         """
         提示：动态规划
-        令 dp[i] 为从第零天到第 i 天的最大获利，并记录从第零天到第 i 天的股票最低价格 min_prices。
+        令 dp[i] 为从第零天到第 i 天（索引 i）的最大获利，并记录从第零天到第 i 天的股票最低价格 min_prices。
         则状态转移方程为:
         dp[i] = max(dp[i-1], prices[i] - min_prices)
 
         """
-        if prices == []:
+        if not prices:
             return 0
         dp = [0] * len(prices)
         min_prices = prices[0]
@@ -37,3 +38,9 @@ class Solution:
             dp[i] = max(dp[i-1], prices[i] - min_prices)
             min_prices = min(prices[i], min_prices)
         return dp[-1]
+
+
+if __name__ == "__main__":
+    f = Solution()
+    prices = [7, 1, 5, 3, 6, 4]
+    print(f.maxProfit(prices))

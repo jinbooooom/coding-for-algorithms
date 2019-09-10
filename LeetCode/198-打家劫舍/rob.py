@@ -26,8 +26,9 @@ class Solution:
     def rob(self, nums: list) -> int:
         """
         提示：动态规划
-        令 dp[i] 为抢了在闭区间 [0, i] 的房子。则状态转移方程为：
-        dp[i] = max(dp[i-1], dp[i-2] + nums[i])  if i>=2
+        令 dp[i] 为偷了在闭区间 [0, i] 的房子，得到的最高金额。
+        则状态转移方程为：
+        dp[i] = max(dp[i-1], dp[i-2] + nums[i])  if i >= 2
 
         """
         size = len(nums)

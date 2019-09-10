@@ -18,7 +18,7 @@ class Solution:
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
         """
         提示:
-        用 dp[i][j] 表示 s1 的前 i 个字符 s1[:i] 和 s2 前 j 个字符 s2[:j] 是否交错组成 s3 前 i+j 字符 s3[:i+j-1]。
+        用 dp[i][j] 表示 s1 的前 i 个字符（包括第 i 个字符） s1[:i] 和 s2 前 j 个字符 s2[:j] 是否交错组成 s3 前 i+j 字符 s3[:i+j-1]。
         若是，则需要满足下列条件之一：
         1、s1 的前 i-1 个字符 s1[:i-1] 和 s2 的前 j 个字符 s2[:j] 已经交错组成 s3 的前 i+j-1 字符 s3[:i+j-1]，
             且 s3[:i+j-1] 的下一个字符 s3[i+j-1] 与 s1[:i-1] 的下一个字符 s1[i-1] 相同；

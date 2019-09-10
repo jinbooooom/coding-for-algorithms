@@ -27,7 +27,7 @@ class Solution:
     def backPack(self, m, A):
         """
         提示：
-        dp[i][j]：前 i 个物品放入容量为 j 的背包的最大重量；
+        dp[i][j]：前 i 个物品(不包括 i)放入容量为 j 的背包的最大重量；
         dp[i-1][j-A_i] + A_i：放入第 i 个物品时的重量；
         dp[i-1][j]：不放第 i 个物品时的重量；
 
@@ -38,7 +38,7 @@ class Solution:
         第一层循环 i：0~n
         第二层循环 j：m ~ Ai，倒序是因为每个物品只能用一次。
 
-        可简化成一维数组。
+        可简化成一维，令 dp[j] 为容量 j 的背包，装起物品的最大重量。
         dp[j] = max(dp[j - A[i]] + A[i], dp[j])
 
         """
