@@ -24,20 +24,23 @@ typora-root-url: ..
 
 
 ### 标签编码
-C/CC`![](sources/c.svg)`
-Python`![](sources/py.svg)`
+C/CC![](sources/c.svg)`![](sources/c.svg)`  
+Python![](sources/py.svg)`![](sources/py.svg)`
 #### 算法
-- 排序`![](sources/sort.svg)` 
-- 搜索`![](sources/search.svg)`
-- 图论`![](sources\g.svg)`
-- 动态规划`![](sources\dp.svg)`
-- 分治`![](sources\2x.svg)`  倍增`![](sources\1x.svg)`  二分`![](sources\2.svg)`  贪心`![](sources\all.svg)`
+- 排序![](sources/sort.svg)`![](sources/sort.svg)` 
+- 搜索![](sources/search.svg)`![](sources/search.svg)`
+- 图论![](sources\g.svg)`![](sources\g.svg)`
+- 动态规划![](sources\dp.svg)`![](sources\dp.svg)`
+	- 分治![](sources\2x.svg)`![](sources\2x.svg)`  
+	- 倍增![](sources\1x.svg)`![](sources\1x.svg)`  
+	- 二分![](sources\2.svg)`![](sources\2.svg)`  
+	- 贪心![](sources\all.svg)`![](sources\all.svg)`
 
 #### 数据结构
-- 线性表`![](sources/list.svg)`
-- 栈`![](sources/stack.svg)`
-- 队列`![](sources/q.svg)`
-- 树`![](sources/graph.svg)`
-- 哈希`![](sources/hash.svg)`
-- 堆`![](sources/heap.svg)`
-- 字符串`![](sources/str.svg)`
+- 线性表![](sources/list.svg)`![](sources/list.svg)`
+- 栈![](sources/stack.svg)`![](sources/stack.svg)`
+- 队列![](sources/q.svg)`![](sources/q.svg)`
+- 树![](sources/graph.svg)`![](sources/graph.svg)`
+- 哈希![](sources/hash.svg)`![](sources/hash.svg)`
+- 堆![](sources/heap.svg)`![](sources/heap.svg)`
+- 字符串![](sources/str.svg)`![](sources/str.svg)`
