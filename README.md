@@ -77,8 +77,8 @@
 
 
 ### 互联网公司笔试真题
-- [1-电话号码分身_小米2017](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017.py)
-- [2-小米大礼包_小米2019](https://github.com/jinbooooom/coding-for-interview/tree/master/itcoder/2-%E5%B0%8F%E7%B1%B3%E5%A4%A7%E7%A4%BC%E5%8C%85_%E5%B0%8F%E7%B1%B32019)
+- [1-电话号码分身_小米2017](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017/telphone.py)
+- [2-小米大礼包_小米2019](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/2-%E5%B0%8F%E7%B1%B3%E5%A4%A7%E7%A4%BC%E5%8C%85_%E5%B0%8F%E7%B1%B32019/bigBag.py)
 
 ### LeetCode
 - [2-两数相加](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/addTwoNumbers.py)
