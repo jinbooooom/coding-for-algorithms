@@ -18,10 +18,8 @@
 - [内排序](https://github.com/jinbooooom/coding-for-interview/tree/master/Data%20structure/sort)
     - [冒泡排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/bubbleSort.py)
     - [插入排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/insertSort.py)
-    - [选择排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/selectSort.py)
-    - [希尔排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/shellSort.py)
-    - [快速排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/quickSort.py)
-    - [归并排序](https://github.com/jinbooooom/coding-for-interview/blob/master/Data%20structure/sort/mergeSort.py)
+    - 
+    - ![](sources\1x.svg)
 ### 剑指 offer
 - [3-数组中重复的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication.py)
     - [不修改数组找重复的数字](https://github.com/jinbooooom/coding-for-interview/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication2.py)
@@ -77,7 +75,7 @@
 
 
 ### 互联网公司笔试真题
-- [1-电话号码分身_小米2017](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017.py)
+- [1-电话号码分身_小米2017](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/1-%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E5%88%86%E8%BA%AB_%E5%B0%8F%E7%B1%B32017.py)![]()
 
 
 ### LeetCode
