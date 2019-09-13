@@ -9,8 +9,13 @@ import re
 
 
 class Solution:
-
+    """
+    """
     def isNumeric(self, s):
+        """
+        正则表达式
+
+        """
         # write code here
 
         # return re.match(r"^[+-]?[0-9]*(\.[0-9]*)?([eE][+-]?[0-9]+)?$",s)
@@ -21,12 +26,17 @@ class Solution:
             return False
 
     def isNumeric2(self, s):
+        """
+        作弊法
+
+        """
         # write code here
         try:
             float(s)
         except:
             return False
         return True
+
 
 if __name__ == "__main__":
     f = Solution()
