@@ -1,3 +1,4 @@
 - [2019年 LeetCode 高频](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/)
 - [背包问题总结](https://blog.csdn.net/u013166817/article/details/85449218)
 - [互联网公司最常见的面试算法题有哪些?](https://www.zhihu.com/question/24964987/answer/586425979)
+- [按类型刷 LeetCode](https://liweiwei1419.github.io/leetcode-solution-blog/guide.html#%E8%AF%B4%E6%98%8E)
