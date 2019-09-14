@@ -20,18 +20,19 @@
 
 
 
-### 标签编码
+### 常见标签编码
 C/CC![](c.svg)`![](sources/c.svg)`  
 Python![](py.svg)`![](sources/py.svg)`
 #### 算法
 - 排序![](sort.svg)`![](sources/sort.svg)` 
 - 搜索![](search.svg)`![](sources/search.svg)`
-- 图论![](g.svg)`![](sources\g.svg)`
-- 动态规划![](dp.svg)`![](sources\dp.svg)`
-	- 分治![](2x.svg)`![](sources\2x.svg)`  
-	- 倍增![](1x.svg)`![](sources\1x.svg)`  
-	- 二分![](2.svg)`![](sources\2.svg)`  
-	- 贪心![](all.svg)`![](sources\all.svg)`
+- 图论![](g.svg)`![](sources/g.svg)`
+- 动态规划![](dp.svg)`![](sources/dp.svg)`
+- 基础技巧
+	- 分治![](2x.svg)`![](sources/2x.svg)`  
+	- 倍增![](1x.svg)`![](sources/1x.svg)`  
+	- 二分![](2.svg)`![](sources/2.svg)`  
+	- 贪心![](all.svg)`![](sources/all.svg)`
 
 #### 数据结构
 - 线性表![](list.svg)`![](sources/list.svg)`
