@@ -83,15 +83,19 @@
 ### LeetCode
 - [2-两数相加](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/addTwoNumbers.py)
 - [5-最长回文子串](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/5-%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/longestPalindrome.py)
+- [28-实现strStr()](28-实现strStr()) [![](sources/coding.svg)](https://leetcode-cn.com/problems/implement-strstr/)
 - [35-搜索插入位置](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/searchInsert.py)
 - [62-不同路径](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/62-%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/uniquePaths.py)
 - [64-最小路径和](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/64-%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/minPathSum.py)
 - [69-x的平方根](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/69-x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9/mySqrt.py)
+- [65-有效数字](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/65-%E6%9C%89%E6%95%88%E6%95%B0%E5%AD%97/isNumber.py) [![](sources/coding.svg)](https://leetcode-cn.com/problems/valid-number) ![](sources/fsm.svg)
 - [75-颜色排序](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/75-%E9%A2%9C%E8%89%B2%E6%8E%92%E5%BA%8F/sortColors.py)
 - [97-交错字符串](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/97-%E4%BA%A4%E9%94%99%E5%AD%97%E7%AC%A6%E4%B8%B2/isInterleave.py)
 - [121-买卖股票的最佳时机](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/121-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA/maxProfit.py)
+	- [123-买卖股票的最佳时机3]() [![](sources/coding.svg)](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/) ![](sources/fsm.svg) 
 - [167-两数之和2-输入有序数组](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C2-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/twoSum.py)
 - [198-打家劫舍](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/198-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/rob.py)
+- [200-岛屿数量](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/200-%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/numIslands.py) [![](sources/coding.svg)](https://leetcode-cn.com/problems/number-of-islands/) ![](sources/bfs.svg) ![](sources/dfs.svg) ![](sources/union.svg)
 - [322-零钱兑换](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2/coinChange.py)
 - [324-摆动排序2](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/324-%E6%91%86%E5%8A%A8%E6%8E%92%E5%BA%8F2/wiggle-sort-ii.py)
 - [349-两个数组的交集](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/349-350-%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/interSection.py)
@@ -101,6 +105,7 @@
 - [416-分割等和子集](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86/canPartition.py)
 - [474-一和零](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/474-%E4%B8%80%E5%92%8C%E9%9B%B6/oneAndZero.py)
 - [494-目标和](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/494-%E7%9B%AE%E6%A0%87%E5%92%8C/findTargetSumWays.py)
+- [547-朋友圈](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/547-%E6%9C%8B%E5%8F%8B%E5%9C%88/friend.py) [![](sources/coding.svg)](https://leetcode-cn.com/problems/friend-circles/) ![](sources/union.svg)
 
 ### acmcoder
 - [1-约德尔测试](https://github.com/jinbooooom/coding-for-interview/blob/master/acmcoder/1-%E7%BA%A6%E5%BE%B7%E5%B0%94%E6%B5%8B%E8%AF%95/yueDeErCeShi.py)
