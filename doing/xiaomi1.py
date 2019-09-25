@@ -1,51 +1,51 @@
 # -*- coding:utf-8 -*-
 """
-https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
+时间限制：C/C++语言 1000MS；其他语言 3000MS
+内存限制：C/C++语言 65536KB；其他语言 589824KB
+题目描述：
+美团某部门在拍年度纪念照时，一般要求员工按照 非递减 的高度顺序排列。
 
-给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
-如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。
-注意你不能在买入股票前卖出股票。
+请你返回至少有多少个员工没有站在正确位置数量。该人数指的是：能让所有员工以 非递减 高度排列的必要移动人数。
 
-示例 1:
-输入: [7,1,5,3,6,4]
-输出: 5
-解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
-     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+例如：有高度为 1,1,4,2,1,3 的6个学生
 
-示例 2:
-输入: [7,6,4,3,1]
-输出: 0
-解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+共有3个学生没有站在正确的位置（高度为 4、3 和最后一个 1 的学生，没有站在正确的位置）
+
+如遇到空输入的情况，需输出0
+
+输入
+一行正整数，以逗号隔开
+
+输出
+输出没有站在正确位置的员工数量
+
+
+样例输入
+1,1,4,2,1,3
+样例输出
+3
+
 
 """
 from typing import List
-
+import os
 
 class Solution:
-    def main(self, prices):
-        if not prices:
-            return 0
-        elif len(prices) <= 3:  # 天数小于等于3天，只能做一次操作
-            return self.buyOnce(prices)
-        two_opera_max_profit = self.buyOnce(prices)
-        for second in range(2, len(prices)-1):
-            two_opera_max_profit = max(two_opera_max_profit,
-                                       self.buyOnce(prices[:second]) + self.buyOnce(prices[second:]))
-        return two_opera_max_profit
-
-    def buyOnce(self, prices):
-        if not prices:
-            return 0
-        dp = [0] * len(prices)
-        min_prices = prices[0]
-        for i in range(len(prices)):
-            dp[i] = max(dp[i-1], prices[i] - min_prices)
-            min_prices = min(prices[i], min_prices)
-        return dp[-1]
-
+    def file_name(self, file_dir):
+        for root, dirs, files in os.walk(file_dir):
+            if not files:
+                continue
+            files = [os.path.join(r, d, f) for r in root for d in dirs for f in files]
+            for file in files:
+                cnt = 0
+                with open(file, 'r') as f:
+                    for line in f.readlines():
+                        if 'ruijie' in line:
+                            print("{},{}".format(dirs, cnt))
+                            cnt += 1
 
 if __name__ == "__main__":
     f = Solution()
-
-    prices = list(map(int, input().strip().split()))
-    print(f.main(prices))
+    L = []
+    f.file_name('./f')
+    #print(L)
