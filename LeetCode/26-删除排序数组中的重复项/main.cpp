@@ -13,14 +13,10 @@ public:
 		int p_this = 0;
 		int p_next = 1;
 		while (p_next < size) {
-			if (nums[p_next] == nums[p_this]) {
+			if (nums[p_next] == nums[p_this])
 				p_next++;
-			}
-			else {
-				p_this++;
-				nums[p_this] = nums[p_next];
-				p_next++;
-			}
+			else
+				nums[++p_this] = nums[p_next++];
 		}
 		return p_this + 1;
 	}
