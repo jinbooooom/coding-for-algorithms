@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+
 class Queue:
     """先进先出"""
     def __init__(self):
@@ -19,6 +20,7 @@ class Queue:
 
     def clear(self):  # 设置为空队列
         del self.items[:]
+
 
 if __name__ == "__main__":
     q = Queue()

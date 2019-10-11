@@ -26,6 +26,7 @@ class Deque:
     def clear(self):
         del self.items[:]
 
+
 if __name__ == "__main__":
     d = Deque()
     d.addRear(5)

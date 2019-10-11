@@ -25,7 +25,6 @@ class Stack:
         del self.items[:]
 
 
-
 if __name__ == "__main__":
     s = Stack()
     s.push(8)
