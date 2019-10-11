@@ -81,7 +81,10 @@
 - [2-小米大礼包_小米2019](https://github.com/jinbooooom/coding-for-interview/blob/master/itcoder/2-%E5%B0%8F%E7%B1%B3%E5%A4%A7%E7%A4%BC%E5%8C%85_%E5%B0%8F%E7%B1%B32019/bigBag.py)
 
 ### LeetCode
-- [2-两数相加](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/addTwoNumbers.py)
+
+- [1-两数之和](https://leetcode-cn.com/problems/two-sum)  [Python](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum.py)
+
+- [2-两数相加](https://leetcode-cn.com/problems/add-two-numbers/)  [Python](https://github.com/jinbooooom/coding-for-interview/blob/master/tencentLeetCode50/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/addTwoNumbers.py)
 - [5-最长回文子串](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/5-%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/longestPalindrome.py)
 - [28-实现strStr()](28-实现strStr()) [![](sources/coding.svg)](https://leetcode-cn.com/problems/implement-strstr/)
 - [35-搜索插入位置](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/searchInsert.py)
@@ -94,6 +97,7 @@
 - [121-买卖股票的最佳时机](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/121-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA/121-maxProfit.py) [![](sources/coding.svg)](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock) ![](sources/dp.svg)
 	- [123-买卖股票的最佳时机3](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/121-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA/123-maxProfit3.py) [![](sources/coding.svg)](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/) ![](sources/fsm.svg) 
 - [167-两数之和2-输入有序数组](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C2-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/twoSum.py)
+- [189-旋转数组](https://leetcode-cn.com/problems/rotate-array)  [Python](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/189-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84/rotate.py)  [C++](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/189-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84/main189.cpp)
 - [198-打家劫舍](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/198-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/rob.py)
 - [200-岛屿数量](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/200-%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/numIslands.py) [![](sources/coding.svg)](https://leetcode-cn.com/problems/number-of-islands/) ![](sources/bfs.svg) ![](sources/dfs.svg) ![](sources/union.svg)
 - [322-零钱兑换](https://github.com/jinbooooom/coding-for-interview/blob/master/LeetCode/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2/coinChange.py)
