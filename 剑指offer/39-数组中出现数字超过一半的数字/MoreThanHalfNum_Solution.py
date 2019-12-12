@@ -75,7 +75,7 @@ class Solution:
 if __name__ == "__main__":
     num = [1, 3, 4, 5, 2, 2, 2, 2, 2]
     f = Solution()
-    #print(f.MoreThanHalfNum_Solution3(num))
+    # print(f.MoreThanHalfNum_Solution3(num))
     print(f.kthmin(num, len(num)//2))
 
 
