@@ -11,131 +11,116 @@
 | 循环队列 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/loopqueue.py) |                                                              |
 |  二叉树  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/tree/BinaryTree.py) |                                                              |
 ### [常用排序算法](https://github.com/jinbooooom/coding-for-algorithms/tree/master/dataStructure/sort)
-| 排序算法 | 平均   | 最好   | 最坏   | 空间复杂度 | 稳定性 | 实现   | 实现 |    备注     |
-| :------: | ------ | ------ | ------ | :--------: | ------ | ------ | ---- | :---------: |
-| 直接插入 | n^2    | n      | n^2    |     1      | 稳定   | Python | C++  | n小时效果好 |
-| 希尔排序 | n^1.3  | n      | n^2    |     1      | 不稳定 | Python | C++  |             |
-| 直接选择 | n^2    | n^2    | n^2    |     1      | 不稳定 | Python | C++  | n小时效果好 |
-|  堆排序  | nlog2n | nlog2n | nlog2n |     1      | 不稳定 | Python | C++  | n大时效果好 |
-| 冒泡排序 | n^2    | n      | n^2    |     1      | 稳定   | Python | C++  | n小时效果好 |
-| 快速排序 | nlog2n | nlog2n | n^2    |   nlog2n   | 不稳定 | Python | C++  | n大时效果好 |
-| 归并排序 | nlog2n | nlog2n | nlog2n |     1      | 稳定   | Python | C++  | n大时效果好 |
+| 排序算法 |  平均  |  最好  |  最坏  | 空间复杂度 | 稳定性 | 实现                                                         | 实现                                                         |    备注     |
+| :------: | :----: | :----: | :----: | :--------: | :----: | ------------------------------------------------------------ | ------------------------------------------------------------ | :---------: |
+| 直接插入 |  n^2   |   n    |  n^2   |     1      |  稳定  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/insertSort.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/insert.cpp) | n小时效果好 |
+| 希尔排序 | n^1.3  |   n    |  n^2   |     1      | 不稳定 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/shellSort.py) |                                                              |             |
+| 直接选择 |  n^2   |  n^2   |  n^2   |     1      | 不稳定 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/selectSort.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/select.cpp) | n小时效果好 |
+|  堆排序  | nlog2n | nlog2n | nlog2n |     1      | 不稳定 |                                                              |                                                              | n大时效果好 |
+| 冒泡排序 |  n^2   |   n    |  n^2   |     1      |  稳定  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/bubbleSort.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/bubble.cpp) | n小时效果好 |
+| 快速排序 | nlog2n | nlog2n |  n^2   |   nlog2n   | 不稳定 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/quickSort.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/quick.cpp) | n大时效果好 |
+| 归并排序 | nlog2n | nlog2n | nlog2n |     1      |  稳定  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/mergeSort.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/sort/merge.cpp) | n大时效果好 |
 
 
 
 ### 经典函数实现
 
 ### 栈与队列
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             | 题目出处 |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [用两个栈实现队列](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/9-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97) |  剑指-9  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/9-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/stack2queue.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/9-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/JZ9.cpp) |        |      |
+| [包含min函数的栈](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/30-%E5%8C%85%E5%90%ABmin%E5%87%BD%E6%95%B0%E7%9A%84%E6%A0%88) | 剑指-30  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/30-%E5%8C%85%E5%90%ABmin%E5%87%BD%E6%95%B0%E7%9A%84%E6%A0%88/min.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/30-%E5%8C%85%E5%90%ABmin%E5%87%BD%E6%95%B0%E7%9A%84%E6%A0%88/JZ30.cpp) |        |      |
+| [栈的压入弹出序列](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/31-%E6%A0%88%E7%9A%84%E5%8E%8B%E5%85%A5%E5%BC%B9%E5%87%BA%E5%BA%8F%E5%88%97) | 剑指-31  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/31-%E6%A0%88%E7%9A%84%E5%8E%8B%E5%85%A5%E5%BC%B9%E5%87%BA%E5%BA%8F%E5%88%97/isPopOrder.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/31-%E6%A0%88%E7%9A%84%E5%8E%8B%E5%85%A5%E5%BC%B9%E5%87%BA%E5%BA%8F%E5%88%97/JZ31.cpp) |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
 
 
 
 
 ### 链表
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-| 数组中重复的数字 |  剑指-3  | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             |  题目出处   |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :---------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [反向打印链表](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/6-%E5%8F%8D%E5%90%91%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8) |   剑指-6    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/6-%E5%8F%8D%E5%90%91%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/6%20printListFromTailToHead.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/6-%E5%8F%8D%E5%90%91%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/mainJZ6.cpp) |        |      |
+| [删除链表的结点](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9) |   剑指-18   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/deleteNode.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/mainJZ18.cpp) |        |      |
+| [删除链表的重复结点](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9) | 剑指-18扩展 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/deleteduplication.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/18-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/mainJZ18-2.cpp) |        |      |
+| [链表中倒数第k个节点](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/22-%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9) |   剑指-22   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/22-%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/findKthToTail.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/22-%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/JZ22.cpp) |        |      |
+| [链表中环的入口结点](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/23-%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%8E%AF%E7%9A%84%E5%85%A5%E5%8F%A3%E8%8A%82%E7%82%B9) |   剑指-23   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/23-%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%8E%AF%E7%9A%84%E5%85%A5%E5%8F%A3%E8%8A%82%E7%82%B9/entryNodeOfLoop.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/23-%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%8E%AF%E7%9A%84%E5%85%A5%E5%8F%A3%E8%8A%82%E7%82%B9/JZ23.cpp) |        |      |
+| [反转链表](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/24-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8) |   剑指-24   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/24-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/reverseList.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/24-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/JZ24.cpp) |        |      |
+| [合并两个排序的链表](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/25-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8) |   剑指-25   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/25-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8/merge.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/25-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8/JZ25.cpp) |        |      |
 ### 树
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-| 数组中重复的数字 |  剑指-3  | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             |  题目出处   |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :---------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [重建二叉树](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/7-%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91) |   剑指-7    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/7-%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/reConstructBinaryTree.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/7-%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/JZ7.cpp) |        |      |
+| [二叉树的下一个结点](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/8-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%82%E7%82%B9) |   剑指-8    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/8-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%82%E7%82%B9/getNext.py) |                                                              |        |      |
+| [树的子结构](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/26-%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84) |   剑指-26   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/26-%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/hasSubTree.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/26-%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/JZ26.cpp) |        |      |
+| [二叉树的镜像](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/27-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F) |   剑指-27   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/27-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/mirror.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/27-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/JZ27.cpp) |        |      |
+| [对称二叉树](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/28-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91) |   剑指-28   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/28-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/isSymmetrical.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/28-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/JZ28.cpp) |        |      |
+| [从上到下打印二叉树](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91) |   剑指-32   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/printFormTopToBottom.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/JZ32.cpp) |        |      |
+| [按层打印二叉树](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91) | 剑指-32扩展 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/printManyLines.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/JZ32-2.cpp) |        |      |
+| [按“之”字形打印二叉树](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91) | 剑指-32扩展 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/printZHI.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/32-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/JZ32-3.cpp) |        |      |
+| [二叉搜索树的后序遍历](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/33-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86) |   剑指-33   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/33-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86/verifySquenceOfBST.py) |                                                              |        |      |
+| [二叉树中和位某一值的路径](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/34-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84) |   剑指-34   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/34-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/findPath.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/34-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%92%8C%E4%B8%BA%E6%9F%90%E4%B8%80%E5%80%BC%E7%9A%84%E8%B7%AF%E5%BE%84/JZ34.cpp) |        |      |
+| [二叉搜索树与双向链表](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/36%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%8E%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8) |   剑指-36   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/36%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%8E%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/convert.py) |                                                              |        |      |
 ### 图与回溯
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-| 数组中重复的数字 |  剑指-3  | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             | 题目出处 |                             实现                             | 实现 | 知识点 | 难度 |
+| :----------------------------------------------------------: | :------: | :----------------------------------------------------------: | :--: | :----: | :--: |
+| [矩阵中的路径](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/12-%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84) | 剑指-12  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/12-%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/12%20hasPath.py) | C++  |        |      |
+| [机器人的运动范围](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/13-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4) | 剑指-13  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/13-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4/movingCount.py) | C++  |        |      |
+|                                                              |          |                            Python                            | C++  |        |      |
+|                                                              |          |                            Python                            | C++  |        |      |
+|                                                              |          |                            Python                            | C++  |        |      |
+|                                                              |          |                            Python                            | C++  |        |      |
 ### 排序与搜索
 
 
 
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-| 数组中重复的数字 |  剑指-3  | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             |  题目出处  |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [数组中重复的数字](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97) |   剑指-3   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/JZ3.cpp) |        |      |
+| [数组中重复的数字扩展](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97) | 剑指3-扩展 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/3-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/duplication2.py) |                                                              |        |      |
+| [二维数组中的查找](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/4-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE) |   剑指-4   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/4-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/find.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/4-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/JZ4.cpp) |        |      |
+| [旋转数组的最小数字](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/11-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97) |  剑指-11   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/11-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97/minOfRotatingArray.py) |                                                              |        |      |
+| [调整数组顺序使奇数在偶数前面](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/21-%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2) |  剑指-21   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/21-%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/reOrderArray.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/21-%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/JZ21.cpp) |        |      |
+| [数组中出现次数超过一半的数字](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/39-%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%95%B0%E5%AD%97%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97) |  剑指-39   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/39-%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%95%B0%E5%AD%97%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/MoreThanHalfNum_Solution.py) |                                                              |        |      |
+| [最小的 k 个数](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/40-%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0) |  剑指-40   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/40-%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/GetLeastNumbers_Solution.py) |                                                              |        |      |
+|                                                              |            |                            Python                            |                             C++                              |        |      |
+|                                                              |            |                            Python                            |                             C++                              |        |      |
 
 
 
 ### 动态规划
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-| 数组中重复的数字 |  剑指-3  | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             | 题目出处 |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [剪绳子](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/14-%E5%89%AA%E7%BB%B3%E5%AD%90) | 剑指-14  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/14-%E5%89%AA%E7%BB%B3%E5%AD%90/maxCut.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/14-%E5%89%AA%E7%BB%B3%E5%AD%90/JZ14.cpp) |        |      |
+| [连续子数组的最大和](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C) | 剑指-42  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/FindGreatestSumOfSubArray.py) |                                                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
 ### 巧妙
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             | 题目出处 |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [二进制中1的个数](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/15-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0) | 剑指-15  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/15-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/numberOf1.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/15-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/JZ15.cpp) | 位运算 |      |
+| [数值的整数次方](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/16-%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9) | 剑指-16  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/16-%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/Power.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/16-%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/JZ16.cpp) |  递归  |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
+|                                                              |          |                            Python                            |                             C++                              |        |      |
 ### 其他
-|       题目       | 题目出处 |  实现  | 实现 | 知识点 |
-| :--------------: | :------: | :----: | :--: | :----: |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
-|                  |          | Python | C++  |        |
+|                             题目                             |  题目出处   |                             实现                             |                             实现                             | 知识点 | 难度 |
+| :----------------------------------------------------------: | :---------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----: | :--: |
+| [青蛙跳台阶](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97) |   剑指-10   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97/jumpFloor.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97/jumpFloor.cpp) |  数学  |      |
+| [变态跳台阶](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97) | 剑指-10扩展 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97/jumpFloor2.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97/jumpFloor2.cpp) |  数学  |      |
+| [矩阵覆盖](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97) | 剑指-10扩展 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/10-fibonacci%E6%95%B0%E5%88%97/rectCover.py) |                                                              |  数学  |      |
+| [正则表达式匹配](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/19-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D) |   剑指-19   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/19-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D/match.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/19-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D/JZ19.cpp) |        |      |
+| [表示数值的字符串](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/20-%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2) |   剑指-20   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/20-%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2/isNumeric.py) |                                                              |        |      |
+| [顺时针打印矩阵](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/29-%E9%A1%BA%E6%97%B6%E9%92%88%E6%89%93%E5%8D%B0%E7%9F%A9%E9%98%B5) |   剑指-29   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/29-%E9%A1%BA%E6%97%B6%E9%92%88%E6%89%93%E5%8D%B0%E7%9F%A9%E9%98%B5/printMatrixClockWisely.py) |                                                              |        |      |
+| [字符串的全排列](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/38-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97) |   剑指-38   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/38-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/Permutation.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/38-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/mainJZ36.cpp) |        |      |
+| [把数组排列成最小的数](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/45-%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0) |   剑指-45   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/45-%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/PrintMinNumber.py) |                                                              |        |      |
+| [替换空格](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/5-%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC) |   剑指-5    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/5-%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/replaceBlank.py) |                             C++                              |        |      |
+|                                                              |             |                            Python                            |                             C++                              |        |      |
+|                                                              |             |                            Python                            |                             C++                              |        |      |
+|                                                              |             |                            Python                            |                             C++                              |        |      |
+|                                                              |             |                            Python                            |                             C++                              |        |      |
+|                                                              |             |                            Python                            |                             C++                              |        |      |
+|                                                              |             |                            Python                            |                             C++                              |        |      |
