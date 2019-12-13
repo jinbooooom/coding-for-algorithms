@@ -33,8 +33,8 @@ class Solution:
         n = len(A)
         if n <= 0 or m <= 0:
             return 0
-        dp = [0 for _ in range(m+1)]
+        dp = [0 for _ in range(m + 1)]
         for i in range(n):
-            for j in range(A[i], m+1):
+            for j in range(A[i], m + 1):
                 dp[j] = max(dp[j-A[i]] + V[i], dp[j])
         return dp[-1]

@@ -1,5 +1,4 @@
 # -*- coding:itf-8 -*-
-from typing import List
 """
 https://leetcode-cn.com/problems/intersection-of-two-arrays-ii
 
@@ -19,6 +18,8 @@ https://leetcode-cn.com/problems/intersection-of-two-arrays-ii
     我们可以不考虑输出结果的顺序。
 
 """
+from typing import List
+
 
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
