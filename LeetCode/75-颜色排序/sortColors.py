@@ -23,8 +23,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        left = 0
-        right = len(nums) - 1
+        left = 0  # nums[:left] 已经排好了，都是0
+        right = len(nums) - 1  # num[right + 1:] 已经排好了，都为2
         i = 0
         while i <= right:
             if nums[i] == 2:
