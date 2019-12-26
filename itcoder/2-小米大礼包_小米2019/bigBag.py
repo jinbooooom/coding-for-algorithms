@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+﻿# -*- coding:utf-8 -*-
 """
 
 小米之家是成人糖果店。里面有很多便宜，好用，好玩的产品。
@@ -67,3 +67,4 @@ if __name__ == "__main__":
     
     f = Solution()
     print(f.main2(prices, M, N))
+

@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+﻿# -*- coding:utf-8 -*-
 """
 https://exercise.acmcoder.com/online/online_judge_ques?ques_id=1662&konwledgeId=135
 
@@ -52,3 +52,5 @@ if __name__ == "__main__":
     for i in range(m):
         ops = list(map(int, input().strip().split()))
         opera(L, *ops)
+
+
