@@ -1,5 +1,17 @@
 
 
+### [数据结构](https://github.com/jinbooooom/coding-for-algorithms/tree/master/dataStructure)
+
+| 数据结构 |                             实现                             | 实现                                                         |
+| :------: | :----------------------------------------------------------: | ------------------------------------------------------------ |
+|   链表   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/linkedList.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/list.cpp) |
+| 双向链表 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/doubleLinkedList.py) |                                                              |
+|    栈    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/stack/stack.py) |                                                              |
+|   队列   | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/queue.py) |                                                              |
+| 双向队列 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/deque.py) |                                                              |
+| 循环队列 | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/loopqueue.py) |                                                              |
+|  二叉树  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/tree/BinaryTree.py) |                                                              |
+
 ﻿# 主要内容：
 
 - [数据结构](https://github.com/jinbooooom/coding-for-interview#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)

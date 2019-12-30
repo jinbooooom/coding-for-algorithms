@@ -6,10 +6,30 @@
 例如:{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止)。
 给一个数组，返回它的最大连续子序列的和(子向量的长度至少是1)。
 """
+
+
 class Solution:
     def FindGreatestSumOfSubArray(self, array):
         """
         提示：
+        方法一：从头到尾逐个累加数组里的数字，如果某次累加的结果为负数，则从下一个元素开始重新累加。
+        """
+        # write code here
+        greatSum = float("-inf")
+        curSum = 0
+        for x in array:
+            if curSum > 0:
+                curSum += x
+            else:
+                curSum = x
+            greatSum = max(greatSum, curSum)
+        return greatSum
+
+
+    def FindGreatestSumOfSubArray_back(self, array):
+        """
+        提示：
+        同方法一，但牛客网 python2.7 不支持无穷小 float("-inf")：
         从头到尾逐个累加数组里的数字，如果某次累加的结果为负数，则从下一个元素开始重新累加。
         """
         # write code here
@@ -30,9 +50,9 @@ class Solution:
 
     def FindGreatestSumOfSubArray2(self, array):
         """
-        提示：
+        方法二提示：
         动态规划求解：
-        用 f(i) 表示以第 i 个数字结尾的子数组的最大和，那么我们需要求出 max[f(i)]，其中 i 属于闭区间 [0, n-1]。
+        用 f(i) 表示以索引 i 结尾的子数组的最大和，那么我们需要求出 max[f(i)]，其中 i 属于闭区间 [0, n-1]。
         则状态转移方程为：
 
                  array[i]               if i == 0 or f(i-1) <= 0

@@ -28,6 +28,9 @@ class Solution:
         状态转移方程为：
         dp[i][j] = max(dp[i][j-A[i]] + V[i], dp[i-1][j])
 
+        可简化成一维，令 dp[j] 为容量 j 的背包，装起物品的最大重量。
+        dp[j] = max(dp[j-A[i]] + V[i], dp[j])
+
         """
         # write your code here
         n = len(A)

@@ -21,9 +21,8 @@ public:
             return 0;
         //进行初始化，第一天 s1 将股票买入，其他状态全部初始化为最小值
         int s0 = 0;
-        int s1 = INT_MIN;
+        int s1 = INT_MIN;  // int s1 = 0x80000000;
         int s2= 0;
-
 
         for(int i = 0; i < prices.size(); ++i)
         {

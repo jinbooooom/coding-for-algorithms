@@ -20,6 +20,7 @@ https://leetcode-cn.com/problems/unique-paths
 
 """
 
+
 class Solution:
     def __init__(self):
         self.dp = {(0, 0): 1}
@@ -40,7 +41,7 @@ class Solution:
         for i in range(1, m):
             for j in range(1, n):
                 self.dp[(i, j)] = self.dp[(i - 1, j)] + self.dp[(i, j - 1)]
-        return self.dp[(m-1, n-1)]
+        return self.dp[(m - 1, n - 1)]
 
 
 if __name__ == "__main__":
