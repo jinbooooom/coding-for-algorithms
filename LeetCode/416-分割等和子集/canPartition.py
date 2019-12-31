@@ -19,12 +19,15 @@ https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/0-1-bei-bao
 解释: 数组不能分割成两个元素和相等的子集.
 
 """
+from typing import List
 
 
 class Solution:
     def canPartition(self, nums: list) -> bool:
         """
         提示:
+        方法一：二维动态规划
+
         可以把这道题转换为 0-1 背包问题：
         有一些物品，它们的重量存储在列表 nums 中，
         而你刚好有两个包，怎么装能让这两个包装的物品重量相等？
@@ -65,3 +68,46 @@ class Solution:
                 else:
                     dp[i][j] = dp[i - 1][j]
         return dp[-1][-1]
+
+    def canPartition2(self, nums: List[int]) -> bool:
+        """
+        提示：
+        方法二：优化成一维动态规划
+
+        即是 01 背包求方案数的问题
+
+        """
+        s = sum(nums)
+        if s & 1:
+            return False;
+        s = s // 2
+        dp = [0 for _ in range(s + 1)]
+        dp[0] = 1
+        for x in nums:
+            for j in range(s, x - 1, -1):
+                dp[j] = dp[j - x] + dp[j]
+        return bool(dp[-1])
+
+    def canPartition3(self, nums: List[int]) -> bool:
+        """
+        提示：
+        方法三：在方法二的基础上改进，更容易理解
+
+        """
+        s = sum(nums)
+        if s & 1:
+            return False;
+        s = s//2
+        dp = [False for _ in range(s + 1)]
+        dp[0] = True
+        for x in nums:
+            for j in range(s, x - 1, -1):
+                dp[j] = dp[j - x] or dp[j]
+        return dp[-1]
+
+
+if __name__ == "__main__":
+    f = Solution()
+    nums = [1, 5, 11, 5]
+    f2 = f.canPartition2(nums)
+    print(f2)

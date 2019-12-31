@@ -1,5 +1,3 @@
-
-
 # -*- coding:utf-8 -*-
 """
 给定 n 个大小为 nums[i] 的物品，无重复。
@@ -8,11 +6,11 @@
 有多少种挑选方案？
 
 例：
-输入 nums = [2, 3, 6, 7]，target 7,
+输入 nums = [2, 3, 6, 7]，target 9,
 
-输出 2。
+输出 4。
 解析：
-    共两种方案，[2, 2, 3] 和 [7]
+    共四种方案，[2, 2, 2, 3]、[3, 6]、[2, 7] 和 [3, 3, 3]
 """
 
 
@@ -50,7 +48,7 @@ class Solution:
 
 if __name__ == "__main__":
     nums = [2, 3, 6, 7]
-    target = 7
+    target = 9
     f = Solution()
     print(f.backPackIV(nums, target))
 
