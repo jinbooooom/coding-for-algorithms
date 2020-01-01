@@ -7,7 +7,7 @@ typedef struct Node
 	int data;
 	Node *next;
 	Node(int v = 0, Node* p = nullptr) : data(v), next(p) {};
-}Node;
+} Node;
 
 
 class List
@@ -17,15 +17,12 @@ private:
 public:
 	List();
 	~List();
-	void append(int value);				// Á´±íÎ²²¿Ìí¼ÓÔªËØ
-	void insert(int value, int pos);	// ÔÚ pos Î»ÖÃ²åÈëÊı¾İ
-	void deleteNode(int pos);			// É¾³ıÖ¸¶¨Î»ÖÃµÄ½áµã
-	int length();						// »ñÈ¡Á´±íµÄ³¤¶È
-	void printList();					// ´òÓ¡Á´±í
-	Node* gethead()
-	{
-		return head;
-	}
+	void append(int value);				// é“¾è¡¨å°¾éƒ¨æ·»åŠ å…ƒç´ 
+	void insert(int value, int pos);	// åœ¨ pos ä½ç½®æ’å…¥æ•°æ®
+	void deleteNode(int pos);			// åˆ é™¤æŒ‡å®šä½ç½®çš„ç»“ç‚¹
+	int length();						// è·å–é“¾è¡¨çš„é•¿åº¦
+	void printList();					// æ‰“å°é“¾è¡¨
+	Node* gethead() { return head; }
 };
 List::List()
 {
@@ -37,12 +34,23 @@ List::~List()
 	;
 }
 
+void List::append(int value)
+{
+	Node *node = new Node(value);
+	Node *p = this->head;
+	while (p->next)
+	{
+		p = p->next;
+	}
+	p->next = node;
+	printList();
+}
 
 void List::insert(int value, int pos)
 {
 	if (pos < 0)
 	{
-		cout << "²åÈëÊ§°Ü£¬²åÈëµÄÎ»ÖÃÓ¦¸Ã >= 0" << endl;
+		cout << "æ’å…¥å¤±è´¥ï¼Œæ’å…¥çš„ä½ç½®åº”è¯¥å¤§äºç­‰äºé›¶" << endl;
 		return;
 	}
 	if (pos >= length())
@@ -52,7 +60,7 @@ void List::insert(int value, int pos)
 	}
 
 	Node* p = head;
-	int index = 0;	// µÚÒ»¸ö½áµãµÄË÷ÒıÎª 0
+	int index = 0;	// ç¬¬ä¸€ä¸ªç»“ç‚¹çš„ç´¢å¼•ä¸º 0
 	while (p)
 	{
 		if (index == pos)
@@ -68,25 +76,24 @@ void List::insert(int value, int pos)
 	printList();
 }
 
-void List::append(int value)
-{
-	Node *node = new Node(value);
-	Node *p = this->head;
-	while (p->next)
-	{
-		p = p->next;
-	}
-	p->next = node;
-	printList();
-}
 
-void List::deleteNode(int pos)  // pos Ë÷Òı
+void List::deleteNode(int pos)  // pos ç´¢å¼•
 {
+	// æ›´å¥½çš„æ–¹æ³•å¯ä»¥å‚è€ƒ mainJZ18.cpp
 	if (pos < 0 || pos > length() - 1)
 	{
-		cout << "´ıÉ¾Êı¾İ²»ÔÚÁ´±íÖĞ" << endl;
+		cout << "å¾…åˆ æ•°æ®ä¸åœ¨é“¾è¡¨ä¸­" << endl;
 		return;
 	}
+	/*
+	else if (length() == 1) // ä¸æ»¡è¶³ä¸Šé¢ if çš„æ¡ä»¶ï¼Œä½†é“¾è¡¨é•¿åº¦åˆæ˜¯ 1ï¼Œé‚£åˆ é™¤çš„åªä¼šæ˜¯ç¬¬ä¸€ä¸ªèŠ‚ç‚¹äº†
+	{
+		Node *pDelete = head->next;
+		head->next = nullptr;
+		delete pDelete;
+		pDelete = nullptr;
+	}
+	*/
 	Node *p = head;
 	Node *pnext = p->next;
 	int cnt = 0;
@@ -96,6 +103,7 @@ void List::deleteNode(int pos)  // pos Ë÷Òı
 		{
 			p->next = pnext->next;
 			delete[] pnext;
+			pnext = nullptr;
 			break;
 		}
 		p = pnext;
@@ -114,7 +122,7 @@ int List::length()
 		cnt++;
 		p = p->next;
 	}
-	cout << "length:" << cnt << endl;
+	// cout << "length:" << cnt << endl;
 	return cnt;
 }
 
@@ -131,7 +139,7 @@ void List::printList()
 
 Node* deleteDuplication(Node* pHead)
 {
-	if (pHead == nullptr || pHead->next == nullptr)  // Á´±íÎª¿Õ»òÕßÖ»ÓĞÒ»¸ö½Úµã
+	if (pHead == nullptr || pHead->next == nullptr)  // é“¾è¡¨ä¸ºç©ºæˆ–è€…åªæœ‰ä¸€ä¸ªèŠ‚ç‚¹
 		return pHead;
 	Node* pNext = pHead->next;
 	if (pHead->data != pNext->data)
@@ -143,7 +151,7 @@ Node* deleteDuplication(Node* pHead)
 	{
 		pNext = pNext->next;
 	}
-	if (pHead->data != pNext->data)                     // ËµÃ÷ pHead µ½ pNext Ö®Ç°µÄÖµ¶¼ÖØ¸´£¬Ó¦¸ÃÉ¾È¥
+	if (pHead->data != pNext->data)                     // è¯´æ˜ pHead åˆ° pNext ä¹‹å‰çš„å€¼éƒ½é‡å¤ï¼Œåº”è¯¥åˆ å»
 	{
 		pHead = deleteDuplication(pNext);
 		return pHead;
@@ -160,7 +168,7 @@ int main()
 	List mylist;
 	mylist.append(7);
 	mylist.append(9);
-	mylist.length();
+	cout << mylist.length() << endl;
 	mylist.insert(1, 0);
 	mylist.insert(10, 3);
 	mylist.insert(5, 2);
@@ -176,10 +184,14 @@ int main()
 	mylist.append(9);
 	deleteDuplication(mylist.gethead());
 	mylist.printList();
-	//mylist
+	mylist.deleteNode(1);
+	mylist.deleteNode(1);
+	mylist.deleteNode(1);
+	mylist.deleteNode(1);
+	cout << "---" << endl;
+	mylist.deleteNode(1);
+	mylist.deleteNode(0);
 
 
 	system("pause");
 }
-
-

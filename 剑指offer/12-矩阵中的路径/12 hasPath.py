@@ -39,7 +39,7 @@ class Solution:
         若找到了路径中的第一个字符，则在格子 （i, j） 四周递归调用 self.hasPathCore() 函数继续找路径 path 的下一个字符。
 
         :param pathLength: 需要寻找的字符在路径 path 中的索引
-        :param visited: 某个格子是否查找过？是标记 1，否标记 0.
+        :param visited: 某个格子是否查找过？是，标记 1，否，标记 0.
         """
         if len(path) == pathLength:
             return True

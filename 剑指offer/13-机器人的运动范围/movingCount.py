@@ -20,16 +20,31 @@ class Solution:
     def moving(self, threshold, rows, cols, i, j):
         """
         机器人已经移动到了坐标 （i, j），满足下面三个 if 条件的该格子就不能达到。
-        把能达到的格子坐标记录到 vis 列表中，用来判断下个满足条件的格子是否已经走过了。
+        把能达到的格子坐标记录到 vis 字典中，
         """
-        if i / 10 + i % 10 + j / 10 + j % 10 > threshold:
+        if self.sumNumber(i) + self.sumNumber(j) > threshold:
             return 0
         if i >= rows or j >= cols or i < 0 or j < 0:
             return 0
         if (i, j) in self.vis:
             return 0
         self.vis.append((i, j))
+
         return 1 + self.moving(threshold, rows, cols, i - 1, j) \
                + self.moving(threshold, rows, cols, i + 1, j) \
                + self.moving(threshold, rows, cols, i, j - 1) \
                + self.moving(threshold, rows, cols, i, j + 1)
+
+    def sumNumber(self, x):
+        if x <= 0:
+            return 0
+        res = 0
+        while x:
+            res += x % 10
+            x /= 10
+        return res
+
+
+
+
+
