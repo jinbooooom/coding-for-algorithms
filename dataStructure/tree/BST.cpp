@@ -5,12 +5,12 @@
 using namespace std;
 
 /*
-二叉排序树(Binary Sort Tree, BST)
-或者是一棵空树；
-或者是具有下列性质的二叉树：
-若它的左子树不为空，则左子树上所有的结点的值均小于它的根结点的值；
-若它的右子树不为空，则右子树上所有的结点的值均大于它的根结点的值；
-它的左右子树也都是二叉排序树。
+����������(Binary Sort Tree, BST)
+������һ�ÿ�����
+�����Ǿ����������ʵĶ�������
+��������������Ϊ�գ��������������еĽ���ֵ��С�����ĸ�����ֵ��
+��������������Ϊ�գ��������������еĽ���ֵ���������ĸ�����ֵ��
+������������Ҳ���Ƕ�����������
 */
 
 typedef struct Node
@@ -31,20 +31,20 @@ public:
 	BST();
 	BST(int arr[], int n);
 	~BST();
-	void insertNode(int value);							// 插入数据
-	void deleteNode(Node* node, int value);				// 删除数据
-	Node* deleteNodeSuper(Node* node, int value);		// 删除数据的优化
-	Node* searchNode(Node* node, int value);			// 查找值为 value 的结点
-	void preOrder(Node* node);							// 前序遍历
-	void preOrderUnRec(Node* node);						// 前序遍历非递归
-	void inOrder(Node* node);							// 中序遍历
-	void inOrderUnRec(Node* node);						// 中序遍历非递归
-	void posOrder(Node* node);							// 后序遍历
-	void posOrderUnRec(Node* node);						// 后序遍历非递归
-	int size();											// 求结点数目
-	int sizeOfLeaf();									// 叶子结点的数目
-	int depth();										// 二叉树的深度
-	Node* getRoot() { return root; }					// 获取根节点
+	void insertNode(int value);					// ��������
+	void deleteNode(Node* node, int value);				// ɾ������
+	Node* deleteNodeSuper(Node* node, int value);			// ɾ�����ݵ��Ż�
+	Node* searchNode(Node* node, int value);			// ����ֵΪ value �Ľ��
+	void preOrder(Node* node);					// ǰ�����
+	void preOrderUnRec(Node* node);				// ǰ������ǵݹ�
+	void inOrder(Node* node);					// �������
+	void inOrderUnRec(Node* node);				// ��������ǵݹ�
+	void posOrder(Node* node);					// �������
+	void posOrderUnRec(Node* node);				// ��������ǵݹ�
+	int size();							// ������Ŀ
+	int sizeOfLeaf();						// Ҷ�ӽ�����Ŀ
+	int depth();						// �����������
+	Node* getRoot() { return root; }					// ��ȡ���ڵ�
 };
 
 BST::BST()
@@ -65,7 +65,7 @@ BST::~BST()
 }
 
 /*
-二叉排序树的插入，必定是插入在某个叶子结点之下
+�����������Ĳ��룬�ض��ǲ�����ĳ��Ҷ�ӽ��֮��
 */
 void BST::insertNode(int value)
 {
@@ -78,12 +78,12 @@ void BST::insertNode(int value)
 
 	while (p)
 	{
-		pLeaf = p;  // 二叉排序树的插入，必定是插入在某个叶子结点之下
+		pLeaf = p;  // �����������Ĳ��룬�ض��ǲ�����ĳ��Ҷ�ӽ��֮��
 		if (value > p->data)
 			p = p->right;
 		else if (value < p->data)
 			p = p->left;
-		else // 相等时，不操作
+		else // ���ʱ�������� 
 			return;
 	}
 
@@ -97,7 +97,7 @@ void BST::insertNode(int value)
 void BST::deleteNode(Node* node, int value)
 {
 	Node* p = node;
-	Node* par = node;  // par：要删除的结点的父节点
+	Node* par = node;  // par��Ҫɾ���Ľ��ĸ��ڵ�
 	while (p)
 	{
 		if (value > p->data)
@@ -115,32 +115,32 @@ void BST::deleteNode(Node* node, int value)
 	}
 	if (p == nullptr)
 	{
-		cout << "没有找到 value 对应的结点，删除失败！" << endl;
+		cout << "û���ҵ� value ��Ӧ�Ľ�㣬ɾ��ʧ�ܣ�" << endl;
 		return;
 	}
-	// 要删除的结点是叶子结点，直接删除
+	// Ҫɾ���Ľ����Ҷ�ӽ�㣬ֱ��ɾ��
 	if (p->left == nullptr && p->right == nullptr)
 	{
 		par->left == p ? par->left = nullptr : par->right = nullptr;
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点有右结点，让该结点的右结点作为父节点的孩子，再删除该结点
+	// Ҫɾ���Ľ�����ҽ�㣬�øý����ҽ����Ϊ���ڵ�ĺ��ӣ���ɾ���ý��
 	else if (p->left == nullptr)
 	{
 		par->left == p ? par->left = p->right : par->right = p->right;
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点有左结点，让该结点的左节点作为父节点的孩子，再删除该结点
+	// Ҫɾ���Ľ�������㣬�øý�����ڵ���Ϊ���ڵ�ĺ��ӣ���ɾ���ý��
 	else if (p->right == nullptr)
 	{
 		par->left == p ? par->left = p->left : par->right = p->left;
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点 p 含有两个子结点，此时从以 p->right 为根构成的子树中找到一个最小的数 cur->data，取代 p->data，
-	// 再对以 p->right 为根构成的子树执行删除 cur->data 操作
+	// Ҫɾ���Ľ�� p ���������ӽ�㣬��ʱ���� p->right Ϊ�����ɵ��������ҵ�һ����С���� cur->data��ȡ�� p->data��
+	// �ٶ��� p->right Ϊ�����ɵ�����ִ��ɾ�� cur->data ����
 	else
 	{
 		Node* cur = p->right;
@@ -151,7 +151,7 @@ void BST::deleteNode(Node* node, int value)
 	}
 }
 
-// 上面的 deleteNode(Node*, int) 写的很冗长，方法也不够好，建议参考 deleteNodeSuper(Node*, int)
+// ����� void deleteNode(Node*, int) д�ĺ��߳�������Ҳ�����ã�����ο� Node* deleteNodeSuper(Node*, int) 
 Node* BST::deleteNodeSuper(Node* root, int key)
 {
 	if (!root)
@@ -199,10 +199,10 @@ void BST::preOrder(Node* node)
 }
 
 /*
-使用一个栈来存储临时结点。
-若 p 非空，打印该节点值，添加该节点的右结点入栈，遍历左子树，
-当遍历完左子树后，此时 p 为空(叶子结点的左孩子为空)，
-若栈非空，说明还有一些右节点没有遍历，将栈顶元素赋给 p
+ʹ��һ��ջ���洢��ʱ��㡣
+�� p �ǿգ���ӡ�ýڵ�ֵ�����Ӹýڵ���ҽ����ջ��������������
+���������������󣬴�ʱ p Ϊ��(Ҷ�ӽ�������Ϊ��)��
+��ջ�ǿգ�˵������һЩ�ҽڵ�û�б�������ջ��Ԫ�ظ��� p
 */
 void BST::preOrderUnRec(Node* node)
 {
@@ -237,9 +237,9 @@ void BST::inOrder(Node* node)
 }
 
 /*
-使用一个栈来存储临时结点
-先将根节点入栈，遍历左子树并入栈，遍历完左子树后，取栈顶元素，此栈顶元素即为最左结点，打印它并出栈，
-再将该结点的右结点重复上述过程
+ʹ��һ��ջ���洢��ʱ���
+�Ƚ����ڵ���ջ����������������ջ����������������ȡջ��Ԫ�أ���ջ��Ԫ�ؼ�Ϊ�����㣬��ӡ������ջ��
+�ٽ��ý����ҽ���ظ���������
 */
 void BST::inOrderUnRec(Node* node)
 {
@@ -274,13 +274,13 @@ void BST::posOrder(Node* node)
 }
 
 /*
-使用两个临时栈 s1, s2,
-先将根节点入栈 s1，
-然后取出栈顶元素 p，入栈 s2, 出栈 s1，再把旧的栈顶元素 p 的左右孩子（如果有的话）入栈 s1
+ʹ��������ʱջ s1, s2,
+�Ƚ����ڵ���ջ s1��
+Ȼ��ȡ��ջ��Ԫ�� p����ջ s2, ��ջ s1���ٰѾɵ�ջ��Ԫ�� p �����Һ��ӣ�����еĻ�����ջ s1
 */
 void BST::posOrderUnRec(Node* node)
 {
-	if(node == nullptr)
+	if (node == nullptr)
 		return;
 	Node* p = node;
 	stack<Node*> s1, s2;
@@ -303,7 +303,7 @@ void BST::posOrderUnRec(Node* node)
 	}
 }
 
-void sizeCore(Node* node, int& cnt)  // 这个结构很像中序遍历，只不过是统计结点总数
+void sizeCore(Node* node, int& cnt)  // ����ṹ�������������ֻ������ͳ�ƽ������
 {
 	if (node == nullptr)
 		return;
@@ -379,26 +379,26 @@ int main()
 	cout << "size of leaf:" << tree.sizeOfLeaf() << endl;
 
 	Node* find = tree.searchNode(root, 5);
-	if (find) cout << "找到5" << endl; else cout << "没有找到5" << endl;
+	if (find) cout << "�ҵ�5" << endl; else cout << "û���ҵ�5" << endl;
 	find = tree.searchNode(root, 99);
-	if (find) cout << "找到99" << endl; else cout << "没有找到99" << endl;
+	if (find) cout << "�ҵ�99" << endl; else cout << "û���ҵ�99" << endl;
 	cout << "depth:" << tree.depth() << endl;
 
 	tree.deleteNode(root, 5);
-	cout << "\n删除 5 后的中序遍历：";
+	cout << "\nɾ�� 5 ������������";
 	tree.inOrder(root);
 	tree.deleteNode(root, 11);
-	cout << "\n删除 11 后的中序遍历：";
+	cout << "\nɾ�� 11 ������������";
 	tree.inOrder(root);
 	tree.deleteNode(root, 6);
-	cout << "\n删除 6 后的中序遍历：";
+	cout << "\nɾ�� 6 ������������";
 	tree.inOrder(root);
 
 	tree.deleteNodeSuper(root, 8);
-	cout << "\n删除 8 后的中序遍历：";
+	cout << "\nɾ�� 8 ������������";
 	tree.inOrder(root);
 	tree.deleteNodeSuper(root, 16);
-	cout << "\n删除 16 后的中序遍历：";
+	cout << "\nɾ�� 16 ������������";
 	tree.inOrder(root);
 
 	system("pause");
