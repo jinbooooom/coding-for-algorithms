@@ -2,6 +2,15 @@
 
 using namespace std;
 
+/*
+链表的设计：
+有的链表直接从第一个结点就开始存放数据；
+有的链表存在表头结点，即链表的第一个结点用来存放链表的长度之类的数据或者空着不用（本文件方案）；
+头节点中不存放数据，只存放指向首节点的指针，
+设置头节点的目的是为了方便对链表的操作，如果不设置头节点，而是直接由头指针指向首节点，
+这样在对头指针后的节点进行插入删除操作时就会与其他节点进行该操作时有所不同，便要作为一种特殊情况来分析
+*/
+
 typedef struct Node
 {
 	int data;
@@ -17,12 +26,13 @@ private:
 public:
 	List();
 	~List();
-	void append(int value);				// 链表尾部添加元素
+	void push_back(int value);			// 链表尾部添加元素
 	void insert(int value, int pos);	// 在 pos 位置插入数据
 	void deleteNode(int pos);			// 删除指定位置的结点
+	void clear();						// 清除链表（只留下头节点）
 	int length();						// 获取链表的长度
-	void printList();					// 打印链表
-	Node* gethead() { return head; }
+	void traverseList();				// 遍历链表并打印
+	Node* gethead() { return head; }	// 获取头节点
 };
 List::List()
 {
@@ -34,8 +44,9 @@ List::~List()
 	;
 }
 
-void List::append(int value)
+void List::push_back(int value)
 {
+	// printf("push_bach(%d)\n", value);
 	Node *node = new Node(value);
 	Node *p = this->head;
 	while (p->next)
@@ -43,25 +54,26 @@ void List::append(int value)
 		p = p->next;
 	}
 	p->next = node;
-	printList();
+	traverseList();
 }
 
-void List::insert(int value, int pos)
+void List::insert(int pos, int value)
 {
+	printf("insert(%d, %d)\n", pos, value);
 	if (pos < 0)
 	{
 		cout << "插入失败，插入的位置应该大于等于零" << endl;
 		return;
 	}
-	if (pos >= length())
+	else if (pos >= length())
 	{
-		append(value);
+		push_back(value);
 		return;
 	}
 
 	Node* p = head;
 	int index = 0;	// 第一个结点的索引为 0
-	while (p)
+	while (p->next)
 	{
 		if (index == pos)
 		{
@@ -73,27 +85,18 @@ void List::insert(int value, int pos)
 		p = p->next;
 		index++;
 	}
-	printList();
+	traverseList();
 }
-
 
 void List::deleteNode(int pos)  // pos 索引
 {
 	// 更好的方法可以参考 mainJZ18.cpp
-	if (pos < 0 || pos > length() - 1)
+	printf("deleteNode(%d)\n", pos);
+	if (pos < 0 || pos >= length())
 	{
 		cout << "待删数据不在链表中" << endl;
 		return;
 	}
-	/*
-	else if (length() == 1) // 不满足上面 if 的条件，但链表长度又是 1，那删除的只会是第一个节点了
-	{
-		Node *pDelete = head->next;
-		head->next = nullptr;
-		delete pDelete;
-		pDelete = nullptr;
-	}
-	*/
 	Node *p = head;
 	Node *pnext = p->next;
 	int cnt = 0;
@@ -110,7 +113,23 @@ void List::deleteNode(int pos)  // pos 索引
 		pnext = pnext->next;
 		cnt++;
 	}
-	printList();
+	traverseList();
+}
+
+void List::clear()
+{
+	cout << "clear()" << endl;
+	Node* p = head->next;
+	Node *pNode = nullptr;
+	while (p)
+	{
+		pNode = p;
+		p = p->next;
+		delete[] pNode;
+		pNode = nullptr;
+	}
+	head->next = nullptr;
+	traverseList();
 }
 
 int List::length()
@@ -126,7 +145,7 @@ int List::length()
 	return cnt;
 }
 
-void List::printList()
+void List::traverseList()
 {
 	Node *p = head->next;
 	while (p)
@@ -137,60 +156,23 @@ void List::printList()
 	cout << "nullptr" << endl;
 }
 
-Node* deleteDuplication(Node* pHead)
-{
-	if (pHead == nullptr || pHead->next == nullptr)  // 链表为空或者只有一个节点
-		return pHead;
-	Node* pNext = pHead->next;
-	if (pHead->data != pNext->data)
-	{
-		pHead->next = deleteDuplication(pNext);
-		return pHead;
-	}
-	while (pHead->data == pNext->data && pNext != nullptr)
-	{
-		pNext = pNext->next;
-	}
-	if (pHead->data != pNext->data)                     // 说明 pHead 到 pNext 之前的值都重复，应该删去
-	{
-		pHead = deleteDuplication(pNext);
-		return pHead;
-	}
-	else
-	{
-		pHead = nullptr;
-		return pHead;
-	}
-}
 
 int main()
 {
 	List mylist;
-	mylist.append(7);
-	mylist.append(9);
-	cout << mylist.length() << endl;
-	mylist.insert(1, 0);
-	mylist.insert(10, 3);
-	mylist.insert(5, 2);
+	mylist.push_back(7);
+	mylist.push_back(9);
 	mylist.insert(-1, -3);
-	mylist.insert(-99, 99);
+	mylist.insert(1, -1);
+	mylist.insert(0, 99);
+	mylist.insert(100, 4);
 	mylist.deleteNode(0);
 	mylist.deleteNode(2);
-	mylist.deleteNode(4);
-	mylist.append(7);
-	mylist.append(7);
-	mylist.append(8);
-	mylist.append(8);
-	mylist.append(9);
-	deleteDuplication(mylist.gethead());
-	mylist.printList();
-	mylist.deleteNode(1);
-	mylist.deleteNode(1);
-	mylist.deleteNode(1);
-	mylist.deleteNode(1);
-	cout << "---" << endl;
-	mylist.deleteNode(1);
-	mylist.deleteNode(0);
+	mylist.deleteNode(2);
+	mylist.deleteNode(2);
+	mylist.push_back(12);
+	mylist.clear();
+
 
 
 	system("pause");
