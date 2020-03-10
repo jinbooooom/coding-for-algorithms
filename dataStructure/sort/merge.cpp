@@ -15,7 +15,7 @@ void Merge(int *arr, int low, int mid, int high)
 	if (right_low <= right_high)
 		for (i = right_low; i <= right_high; i++)
 			tmp[k++] = arr[i];
-	for (i = 0; i<high - low + 1; i++)
+	for (i = 0; i < high - low + 1; i++)
 		arr[low + i] = tmp[i];
 	free(tmp);
 }

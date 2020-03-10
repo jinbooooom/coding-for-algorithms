@@ -7,11 +7,11 @@ https://blog.csdn.net/u013166817/article/details/85449218
 你不可以将物品进行切割。
 
 样例 1:
-    输入:  [3,4,8,5], backpack n=10
+    输入:  [3,4,8,5], backpack n = 10
     输出:  9
 
 样例 2:
-    输入:  [2,3,5,7], backpack n=12
+    输入:  [2,3,5,7], backpack n = 12
     输出:  12
 
 """
@@ -47,7 +47,7 @@ class Solution:
             return 0
         dp = [0 for _ in range(m + 1)]
         for i in range(n):
-            for j in range(m, A[i] - 1, -1):
+            for j in range(m, A[i] - 1, -1):  # 每个物品只能用一次
                 dp[j] = max(dp[j - A[i]] + A[i], dp[j])
         return dp[-1]
 

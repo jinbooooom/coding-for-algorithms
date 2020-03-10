@@ -45,7 +45,6 @@ class Solution:
             return 3 * self.maxCut2(length - 3)
 
 
-
 if __name__ == "__main__":
     f = Solution()
     length = 8

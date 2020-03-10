@@ -1,4 +1,3 @@
-// 牛客网通过率0%，复杂度过高？
 class Solution {
 public:
     ListNode* EntryNodeOfLoop(ListNode* pHead)
@@ -7,32 +6,29 @@ public:
             return nullptr;
         ListNode* pFast = pHead;
         ListNode* pSlow = pHead;
-        int NodeOfLoop = 1;
 
         while (pFast)
         {
             if (pFast->next && pFast->next->next)
             {
                 pFast = pFast->next->next;
-                pSlow = pFast->next;
+                pSlow = pSlow->next;
+                if (pFast == pSlow)
+                    break;
             }
-            else
+            else  // 此时链表无环
                 return nullptr;
-
-            if (pFast == pSlow)
-            {
-                pFast = pFast->next;
-                //NodeOfLoop++;
-                while (pFast != pSlow)
-                {
-                    pFast = pFast->next;
-                    NodeOfLoop++;
-                }
-                if (NodeOfLoop == 1)        // 环中只有一个结点，pSlow 就是环的入口结点
-                    return pSlow;
-                break;
-            }
         }
+
+        pFast = pFast->next;
+        int NodeOfLoop = 1;
+        while (pFast != pSlow)
+        {
+            pFast = pFast->next;
+            ++NodeOfLoop;
+        }
+        if (NodeOfLoop == 1)        // 环中只有一个结点，pSlow 就是环的入口结点
+            return pSlow;
 
         ListNode* p1 = pHead;
         ListNode* p2 = pHead;

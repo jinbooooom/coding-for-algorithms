@@ -3,7 +3,7 @@ class Solution {
     stack<int> minstk;
 public:
     void push(int value) {
-        if (minstk.empty() || value <= minstk.top())
+        if (minstk.empty() || value <= minstk.top())    // 注意是 <=
             minstk.push(value);
         stk.push(value);
     }

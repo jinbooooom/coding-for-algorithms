@@ -7,6 +7,14 @@ void swap(char *&s1, char *&s2)
 	s2 = tmp;
 }
 
+void swap2(char **s1, char **s2)
+{
+	char **tmp;
+	tmp = s1;
+	s1 = s2;
+	s2 = tmp;
+}
+
 int main(int argc, char* argv[]) {
 	char * s1 = "hello ";
 	char * s2 = "world ";

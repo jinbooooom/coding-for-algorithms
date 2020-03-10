@@ -1,6 +1,6 @@
 int partition(int *arr, int low, int high)
 {
-	int key = arr[low];
+	int key = arr[low];  // 默认第一个数作为基准
 	while (low < high) {
 		while (low < high && arr[high] >= key)
 			high--;

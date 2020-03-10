@@ -1,3 +1,7 @@
+/*
+输入一个链表，反转链表后，输出新链表的表头。
+*/
+
 class Solution {
 public:
     ListNode* ReverseList(ListNode* pHead) {
@@ -7,23 +11,16 @@ public:
         ListNode* pre = nullptr;
         ListNode* pNode = pHead;
         ListNode* pNext = pNode->next;
-        pNode->next = pre;
 
         while (pNext)
         {
-            if (pNext->next)
-            {
-                ListNode* pNextNext = pNext->next;
-                pre = pNode;
-                pNode = pNext;
-                pNext = pNextNext;
-                pNode->next = pre;
-            }
-            else
-            {
-                pNext->next = pNode;
-                return pNext;
-            }
+            pNode->next = pre;
+            pre = pNode;
+            pNode = pNext;
+            pNext = pNode->next;
         }
+        // 此时 pNext 为空，pNode 为头结点
+        pNode->next = pre;
+        return pNode;
     }
 };

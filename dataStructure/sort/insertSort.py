@@ -14,27 +14,10 @@ class Sort:
             print(arr)
         return arr
 
-    def insertSort2(self, arr):
-        """
-        python 风格插入排序
-        """
-        for i in range(1, len(arr)):
-            t = arr[i]
-            for j in range(i):
-                if arr[j] > t:
-                    del arr[i]
-                    arr.insert(j, t)
-                    print(arr)
-                    break
-        return arr
-
 
 if __name__ == "__main__":
     arr = [9, 8, 5, 6, 3]
     f = Sort()
     print("原始数组：{}\n排序过程：".format(arr))
     f.insertSort(arr)
-    print('\npython风格插入排序：')
-    print("原始数组：{}\n排序过程：".format(arr))
-    arr = [9, 8, 5, 6, 3]
-    f.insertSort2(arr)
+
