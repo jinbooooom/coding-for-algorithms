@@ -25,26 +25,47 @@ using namespace std;
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
+
 class Solution {
 public:
-	string longestCommonPrefix(vector<string>& strs) {
-		/*
+    string longestCommonPrefix(vector<string>& strs) {
+    	/*
 		方法一：
-		将第一个字符串最为最长公共前缀 res，之后从第二个字符串 strs[2] 开始，
+		将第一个字符串设为最长公共前缀 res，之后从第二个字符串 strs[1] 开始，
 		逐个与 res 两两比较找出最长公共前缀，再用新的公共前缀更新 res 值。
 		*/
-		/*
-		方法二：
-		逐位比较
-		*/
-		;
-	}
+        if (strs.empty())
+            return "";
+
+        string res = strs[0];
+        for (int i = 1; i < strs.size(); ++i)
+        {
+            if (res == "")
+                break;
+            res = common(res, strs[i]);
+        }
+        return res;
+    }
+
+    string common(string s1, string s2)
+    {
+        if (s1.empty() || s2.empty())
+            return "";
+        int length = s1.size() > s2.size() ? s2.size() : s1.size();
+        int i = 0;
+        for (; i < length; ++i)
+        {
+            if (s1[i] != s2[i])
+                break;
+        }
+        string tmp(s1.begin(), s1.begin() + i);
+        return tmp;
+    }
+
+    /*
+	方法二：
+	逐位比较
+	*/
 };
 
-int main()
-{
-	string s = "abc";
-	cout << s[3] << ' ' << s[4] << endl;
 
-	getchar();
-}

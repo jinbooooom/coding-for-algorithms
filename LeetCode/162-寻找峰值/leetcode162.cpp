@@ -28,5 +28,26 @@ https://leetcode-cn.com/problems/find-peak-element
 
 */
 
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+    /*
+    只需要找到任意一个峰值即可。
+    设置左右指针分别指向第一个和最后一个元素，根据左右指针计算中间位置 m，并比较 m 与 m + 1 的值，
+    如果 m 较大，则左侧存在峰值，right = m，如果 m + 1 较大，则右侧存在峰值，left = m + 1
+    */
+        int left = 0, right = nums.size() - 1;
+        while (left < right)
+        {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] > nums[mid + 1])
+                right = mid;
+            else
+                left = mid + 1;
+        }
+        return left;
+    }
+};
+
 
 

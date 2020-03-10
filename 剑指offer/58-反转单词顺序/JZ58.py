@@ -10,7 +10,22 @@ class Solution:
     def ReverseSentence(self, s):
         """
         提示：
-        实现一个函数，以反转字符串的某一段，首先对整个字符串反转，再对每个单词反转。
+        对于 C++ 可以先实现一个函数，以反转字符串的某一段，首先对整个字符串反转，再对每个单词反转。
+        对于 Python 直接将字符串通过空格分割成各个单词，将每个单词翻转后再拼接，再对拼接后的字符串翻转。
         """
         # write code here
-        pass
+        if not s:
+            return s
+
+        words = s.split()
+        # 当 s 只由空格组成，此时 words 为空
+        if not words:
+            return s
+
+        res = ""
+        for word in words:
+            res += word[::-1] + " "
+        res = res[::-1]
+        # 最后一个单词后不应该添加空格，实际上也添加了，翻转后字符串首部有空格
+        res = res[1:]
+        return res

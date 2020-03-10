@@ -11,7 +11,16 @@ class Solution:
     def LeftRotateString(self, s, n):
         """
         提示：
+        对于 C++ 可以先实现一个函数，以反转字符串的某一段。
         将字符串分成两部分 s[:n] 和 s[n:]，分别翻转这两部分，然后再对整个字符串翻转。
+        S = "abcXYZdef"，n = 3
+        S[:3] = "abc", S[3:] = "XYZdef"
+        翻转后：
+        S[:3] = "cba", S[3:] = "fedZYX"
+        S = S[:3] + S[3:] = "cbafedZYX"
+        翻转 S 得 S = "XYZdefabc"
+
+        对于 Python，使用切片即可。
         """
         # write code here
-        pass
+        return s[n:] + s[:n]

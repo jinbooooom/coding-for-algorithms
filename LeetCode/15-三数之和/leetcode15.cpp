@@ -22,10 +22,11 @@ https://leetcode-cn.com/problems/3sum
 ]
 */
 
+
 class Solution {
 public:
-	vector<vector<int>> threeSum(vector<int>& nums) {
-	/*
+    vector<vector<int>> threeSum(vector<int>& nums) {
+    /*
 	算法流程：
     对数组进行排序。
     遍历排序后的数组：
@@ -35,6 +36,37 @@ public:
             若 num[i] + nums[pl] + nums[pr] 大于 0，说明 nums[pr] 太大，pr 左移;
             若 num[i] + nums[pl] + nums[pr] 小于 0，说明 nums[pl] 太小，pl 右移
 	*/
-	}
+        int n = nums.size();
+        vector<vector<int> > res;
+        if (nums.empty() || n < 3)
+            return res;
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < n; ++i)
+        {
+            if (nums[i] > 0)
+                return res;
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue;
+            int pl = i + 1;
+            int pr = n - 1;
+            while (pl < pr)
+            {
+                if (nums[i] + nums[pl] + nums[pr] == 0)
+                {
+                    res.push_back({nums[i], nums[pl], nums[pr]});
+                    while (pl < pr && nums[pl] == nums[pl + 1])
+                        ++pl;
+                    while (pl < pr && nums[pr] == nums[pr - 1])
+                        --pr;
+                    ++pl;
+                    --pr;
+                }
+                else if (nums[i] + nums[pl] + nums[pr] > 0)
+                    --pr;
+                else
+                    ++pl;
+            }
+        }
+        return res;
+    }
 };
-

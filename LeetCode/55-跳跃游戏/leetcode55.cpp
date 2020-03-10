@@ -26,5 +26,22 @@ https://leetcode-cn.com/problems/jump-game/solution/pythonji-bai-97kan-bu-dong-n
 
 */
 
+class Solution {
+public:
+    bool canJump(vector<int>& nums) {
+    /*
+    思路：
+    尽可能到达最远位置（贪心）。如果能到达某个位置，那一定能到达它前面的所有位置。
+    初始化最远位置为 0，然后遍历数组，如果当前位置能到达，
+    并且当前位置 + 当前位置能够跳跃的最大长度 > 最远位置，就更新最远位置。最后比较最远位置和数组长度。
+    */
+        int distance = 0;  // 初始化当前能到达最远的位置
+        for (int i = 0; i < nums.size(); ++i)
+            if (i <= distance && distance < i + nums[i])  // 如果当前位置能到达，并且当前位置 + 当前位置能够跳跃的最大长度 > 最远位置
+                distance = i + nums[i];  // 更新最远能到达的位置
+        return distance >= nums.size() - 1;
+    }
+};
+
 
 
