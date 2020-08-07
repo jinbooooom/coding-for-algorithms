@@ -5,12 +5,12 @@
 using namespace std;
 
 /*
-����������(Binary Sort Tree, BST)
-������һ�ÿ�����
-�����Ǿ����������ʵĶ�������
-��������������Ϊ�գ��������������еĽ���ֵ��С�����ĸ�����ֵ��
-��������������Ϊ�գ��������������еĽ���ֵ���������ĸ�����ֵ��
-������������Ҳ���Ƕ�����������
+二叉排序树(Binary Sort Tree, BST)
+或者是一棵空树；
+或者是具有下列性质的二叉树：
+若它的左子树不为空，则左子树上所有的结点的值均小于它的根结点的值；
+若它的右子树不为空，则右子树上所有的结点的值均大于它的根结点的值；
+它的左右子树也都是二叉排序树。
 */
 
 typedef struct Node
@@ -31,20 +31,20 @@ public:
 	BST();
 	BST(int arr[], int n);
 	~BST();
-	void insertNode(int value);					// ��������
-	void deleteNode(Node* node, int value);				// ɾ������
-	Node* deleteNodeSuper(Node* node, int value);			// ɾ�����ݵ��Ż�
-	Node* searchNode(Node* node, int value);			// ����ֵΪ value �Ľ��
-	void preOrder(Node* node);					// ǰ�����
-	void preOrderUnRec(Node* node);				// ǰ������ǵݹ�
-	void inOrder(Node* node);					// �������
-	void inOrderUnRec(Node* node);				// ��������ǵݹ�
-	void posOrder(Node* node);					// �������
-	void posOrderUnRec(Node* node);				// ��������ǵݹ�
-	int size();							// ������Ŀ
-	int sizeOfLeaf();						// Ҷ�ӽ�����Ŀ
-	int depth();						// �����������
-	Node* getRoot() { return root; }					// ��ȡ���ڵ�
+	void insertNode(int value);						// 插入数据
+	void deleteNode(Node* node, int value);			// 删除数据
+	Node* deleteNodeSuper(Node* node, int value);	// 删除数据的优化
+	Node* searchNode(Node* node, int value);		// 查找值为 value 的结点
+	void preOrder(Node* node);						// 前序遍历
+	void preOrderUnRec(Node* node);					// 前序遍历非递归
+	void inOrder(Node* node);						// 中序遍历
+	void inOrderUnRec(Node* node);					// 中序遍历非递归
+	void posOrder(Node* node);						// 后序遍历
+	void posOrderUnRec(Node* node);					// 后序遍历非递归
+	int size();										// 求结点数目
+	int sizeOfLeaf();								// 叶子结点的数目
+	int depth();									// 二叉树的深度
+	Node* getRoot() { return root; }				// 获取根节点
 };
 
 BST::BST()

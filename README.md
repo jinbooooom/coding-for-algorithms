@@ -28,7 +28,7 @@
 |  数据结构  |                             实现                             |                             实现                             |
 | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |    链表    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/linkedList.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/linkedList.cpp) |
-|  双向链表  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/doubleLinkedList.py) |                                                              |
+|  双向链表  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/doubleLinkedList.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/list/DoubleLinkedList.cpp) |
 |     栈     | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/stack/stack.py) |                                                              |
 |    队列    | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/queue.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/queue.cpp) |
 |  双向队列  | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/dataStructure/queue/deque.py) |                                                              |
