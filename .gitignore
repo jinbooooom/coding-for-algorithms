@@ -1,8 +1,12 @@
 push.sh
 .idea/*
 data/*
+**/*.o
+*/*.i
+*/*.s
 **/__pycache__/*
 **/.vs/*
+*/.vscode/*
 **/ConsoleApplication1/*
 C++
 
@@ -10,5 +14,6 @@ t/*
 r/*
 test/*
 doing/*
+
 
 
