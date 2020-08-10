@@ -6,7 +6,8 @@ data/*
 */*.s
 **/__pycache__/*
 **/.vs/*
-*/.vscode/*
+.*/.vscode/*
+.vscode
 **/ConsoleApplication1/*
 C++
 

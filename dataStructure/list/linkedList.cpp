@@ -5,10 +5,11 @@ using namespace std;
 
 /*
 链表的设计：
-有的链表直接从第一个结点就开始存放数据；
-有的链表存在表头结点，即链表的第一个结点用来存放链表的长度之类的数据或者空着不用（本文件方案）；
-头节点中不存放数据，只存放指向首节点的指针，
-设置头节点的目的是为了方便对链表的操作，如果不设置头节点，而是直接由头指针指向首节点，
+有的链表直接从第一个结点就开始存放数据，有的链表存在表头结点，即链表的第一个结点用来存放链表的长度之类的数据或者空着不用。
+本文件链表的实现方案是：
+第一个结点作为表头结点，存放指向首结点的指针和链表的长度。
+
+另外设置头节点还可以方便对链表进行操作，如果不设置头节点，而是直接由头指针指向首节点，
 这样在对头指针后的节点进行插入删除操作时就会与其他节点进行该操作时有所不同，便要作为一种特殊情况来分析
 
 一些注意事项：
@@ -31,15 +32,15 @@ private:
 
 public:
 	List();
-	List(vector<int>& vec);				// 使用 vector 初始化链表 
+	List(const vector<int>& vec);		// 使用 vector 初始化链表 
 	~List();
 	void push_back(int value);			// 链表尾部添加元素
 	void insert(int value, int pos);	// 在 pos 位置插入数据 value
 	void deleteNode(int pos);			// 删除指定位置的结点
 	void clear();						// 清除链表（只留下头节点）
-	int length();						// 获取链表的长度
-	int getElem(int i);					// 获取链表中索引为 i 的节点的数据
-	void traverseList();				// 遍历链表并打印
+	int length() const;					// 获取链表的长度
+	int getElem(int i) const;			// 获取链表中索引为 i 的节点的数据
+	void traverseList() const;			// 遍历链表并打印
 	Node* gethead() { return head; }	// 获取头节点
 };
 
@@ -51,7 +52,7 @@ List::List()
 	if (show) traverseList();
 }
 
-List::List(vector<int>& vec)
+List::List(const vector<int>& vec)
 {
 	if (show) cout << "使用 vector 初始化 list" << endl;
 
@@ -60,6 +61,7 @@ List::List(vector<int>& vec)
 	{
 		this->push_back((vec)[i]);
 	}
+	this->head->data = vec.size(); 
 
 	if (show) traverseList();
 }
@@ -83,7 +85,8 @@ void List::push_back(int value)
 		p = p->next;
 	}
 	p->next = node;
-	
+	++this->head->data;
+
 	if (show) traverseList();
 }
 
@@ -116,6 +119,7 @@ void List::insert(int pos, int value)
 		p = p->next;
 		++index;
 	}
+	++this->head->data;
 	
 	if (show) traverseList();
 }
@@ -147,6 +151,7 @@ void List::deleteNode(int pos)  // pos 索引
 		pnext = pnext->next;
 		++cnt;
 	}
+	--this->head->data;
 	
 	if (show) traverseList();
 }
@@ -165,12 +170,14 @@ void List::clear()
 		pNode = nullptr;
 	}
 	head->next = nullptr;
+	this->head->data = 0;
 	
 	if (show) traverseList();
 }
 
-int List::length()
+int List::length() const
 {
+	/*
 	int cnt = 0;
 	Node *p = head->next;
 	while (p)
@@ -180,9 +187,12 @@ int List::length()
 	}
 	cout << "length: " << cnt << endl;
 	return cnt;
+	*/
+	// cout << "length:" << this->size << endl; 
+	return this->head->data;
 }
 
-int List::getElem(int pos)		// 索引
+int List::getElem(int pos) const		// 索引
 {
 	if (show) printf("call getElem(%d)", pos);
 	
@@ -207,7 +217,7 @@ int List::getElem(int pos)		// 索引
 	
 }
 
-void List::traverseList()
+void List::traverseList() const
 {
 	Node *p = head->next;
 	while (p)
@@ -227,6 +237,7 @@ int main()
 	mylist.insert(1, -1);
 	mylist.insert(0, 99);
 	mylist.insert(100, 5);
+	cout << "now length:" << mylist.length() << endl;
 	mylist.getElem(3);
 	mylist.getElem(0);
 	// mylist.getElem(100);
@@ -236,6 +247,50 @@ int main()
 	mylist.deleteNode(2);
 	mylist.deleteNode(2);
 	mylist.push_back(12);
+	cout << "now length:" << mylist.length() << endl;
+	cout << "头结点存放的数据是：" << mylist.gethead()->data << endl;
 
 	// 退出 main 后执行析构函数
 }
+
+/*
+jinbo@fang:~/gitme/coding-for-algorithms/dataStructure/list$ g++ linkedList.cpp -o linkedList.o -std=c++11
+jinbo@fang:~/gitme/coding-for-algorithms/dataStructure/list$ ./linkedList.o 
+使用 vector 初始化 list
+call push_back(11)
+11 -> nullptr
+call push_back(55)
+11 -> 55 -> nullptr
+call push_back(99)
+11 -> 55 -> 99 -> nullptr
+11 -> 55 -> 99 -> nullptr
+call push_back(9)
+11 -> 55 -> 99 -> 9 -> nullptr
+call insert(-1, -3)
+插入失败，插入的位置应该大于等于零
+call insert(1, -1)
+11 -> -1 -> 55 -> 99 -> 9 -> nullptr
+call insert(0, 99)
+99 -> 11 -> -1 -> 55 -> 99 -> 9 -> nullptr
+call insert(100, 5)
+call push_back(5)
+99 -> 11 -> -1 -> 55 -> 99 -> 9 -> 5 -> nullptr
+now length:7
+call getElem(3): 55
+call getElem(0): 99
+call deleteNode(0)
+11 -> -1 -> 55 -> 99 -> 9 -> 5 -> nullptr
+call deleteNode(2)
+11 -> -1 -> 99 -> 9 -> 5 -> nullptr
+call deleteNode(2)
+11 -> -1 -> 9 -> 5 -> nullptr
+call deleteNode(2)
+11 -> -1 -> 5 -> nullptr
+call push_back(12)
+11 -> -1 -> 5 -> 12 -> nullptr
+now length:4
+头结点存放的数据是：4
+call ~List()
+call clear()
+nullptr
+*/
