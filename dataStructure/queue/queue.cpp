@@ -51,7 +51,10 @@ Queue::Queue(int value)
 
 Queue::~Queue()
 {
-	;
+	if (show) printf("call ~Queue()\n");
+	this->clear();
+	delete[] front;
+	delete[] rear;
 }
 
 bool Queue::empty() const
@@ -210,4 +213,6 @@ call push(5)
 call push(99)
 队头 5 99 队尾
 length:2
+call ~Queue()
+call clear()
 */
