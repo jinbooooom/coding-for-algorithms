@@ -6,6 +6,11 @@
 #include <string.h>//radix sort need memset function
 //#define N 1000000       //N :the length of array
 
+/*
+本科时在 windows 上写的排序算法，
+建议阅读同目录下 ./sort/* 里的文件，应该写的更好一些
+*/
+
 void printarr(int *arr,int len)
 {
     for(int i=0;i<len;i++)

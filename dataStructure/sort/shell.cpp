@@ -1,7 +1,7 @@
 /*
 shell 排序是对插入排序的一个改进
 */
-void Shell_sort(int *arr,int len)
+void shell(int *arr,int len)
 {
     int i, j, x, d;
     d = len/2;
