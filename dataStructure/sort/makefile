@@ -1,6 +1,13 @@
-sort:*.o
-	g++ *.o -o sort -std=c++11
-allSort.o:*.cpp mysort.h
-	g++ -c *.cpp -std=c++11
-#clean:
-#	rm -f *.o sort
+OBJS = bubble.o insert.o merge.o quick.o select.o shell.o sort.o
+#OBJS = $(wildcard *.o)
+SRC = $(wildcard *.cpp)
+
+CC = g++
+STD = -std=c++11
+
+sort:${OBJS}
+	${CC} ${OBJS} -o $@ ${STD}
+all:${SRC}
+	${CC} -c ${SRC} ${STD}
+clean:
+	rm -f *.o sort
