@@ -1,5 +1,6 @@
-OBJS = bubble.o insert.o merge.o quick.o select.o shell.o sort.o
+#OBJS = bubble.o insert.o merge.o quick.o select.o shell.o sort.o
 #OBJS = $(wildcard *.o)
+OBJS = $(patsubst %.cpp, %.o, $(wildcard *.cpp))
 SRC = $(wildcard *.cpp)
 
 CC = g++
