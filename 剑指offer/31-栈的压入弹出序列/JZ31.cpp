@@ -6,12 +6,14 @@
 但4,3,5,1,2就不可能是该压栈序列的弹出序列。（注意：这两个序列的长度是相等的）
 */
 
-class Solution {
+class Solution
+{
 public:
     /**
      * 按照 popV 里的顺序出栈，如果能把 pushV 出栈成空栈，说明 popV 是一种可能的弹出顺序。
     */
-    bool IsPopOrder(vector<int> pushV,vector<int> popV) {
+    bool IsPopOrder(vector<int> pushV, vector<int> popV)
+    {
         if (pushV.size() != popV.size())
             return false;
         int length = pushV.size();

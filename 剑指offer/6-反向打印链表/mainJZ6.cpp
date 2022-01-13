@@ -1,4 +1,5 @@
 /**
+ * 输入一个链表的头节点，按链表从尾到头的顺序返回每个节点的值（用数组返回）。
 *  struct ListNode {
 *        int val;
 *        struct ListNode *next;
