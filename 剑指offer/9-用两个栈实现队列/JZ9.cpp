@@ -5,14 +5,16 @@
 class Solution
 {
 public:
-    void push(int node) {
+    void push(int node)
+    {
         stack1.push(node);
     }
 
-    int pop() {
-        if(stack2.empty())
+    int pop()
+    {
+        if (stack2.empty())
         {
-            while(!stack1.empty())
+            while (!stack1.empty())
             {
                 int data = stack1.top();
                 stack2.push(data);
@@ -21,7 +23,7 @@ public:
         }
         // 将 stack1 里的数据放入栈 stack2 后，stack2还是空的，
         // 说明 stack1 本身就是空的，此时就不能出队了,应该报错
-        if(stack2.empty())
+        if (stack2.empty())
             cout << "queue is empty" << endl;
         int data = stack2.top();
         stack2.pop();
@@ -29,6 +31,6 @@ public:
     }
 
 private:
-    stack<int> stack1;        // 队尾，进队
-    stack<int> stack2;        // 队头，出队
+    stack<int> stack1; // 队尾，进队
+    stack<int> stack2; // 队头，出队
 };
