@@ -61,8 +61,8 @@
 - isEmpty() 查看队列是否为空。它不需要参数，并返回布尔值。
 - size() 或者 \_\_len\_\_() 返回队列中的项数。它不需要参数，并返回一个整数。
 #### 队空与队满
-队空条件为：front==rear
-队满条件为：(rear+1)%QueueSize==front
+队空条件为：`front==rear`
+队满条件为：`(rear+1)%QueueSize==front`
 
 ##### [循环队列的实现](queue/loopqueue.py)
 

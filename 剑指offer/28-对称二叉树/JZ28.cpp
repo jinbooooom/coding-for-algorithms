@@ -1,3 +1,6 @@
+/**
+ * 请实现一个函数，用来判断一颗二叉树是不是对称的。注意，如果一个二叉树与此二叉树的镜像是同样的，定义其为对称的。
+*/
 
 class Solution {
 public:
@@ -7,10 +10,10 @@ public:
     {
         if (pRoot == nullptr)
             return true;
-        return same(pRoot->left, pRoot->right);
+        return isSame(pRoot->left, pRoot->right);
     }
 
-    bool same(TreeNode* pL, TreeNode* pR)
+    bool isSame(TreeNode* pL, TreeNode* pR)
     {
         if (pL == nullptr && pR == nullptr)  // 左右结点同时为空，对称
             return true;
@@ -19,7 +22,7 @@ public:
         if (pL->val != pR->val)
             return false;
         else
-            return same(pL->left, pR->right) && same(pL->right, pR->left);
+            return isSame(pL->left, pR->right) && isSame(pL->right, pR->left);
     }
 
     // 法二：若树对称，那么按根左右顺序打印的结果肯定和按根右左的顺序打印的结果一样

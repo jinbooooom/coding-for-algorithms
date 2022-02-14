@@ -26,7 +26,6 @@ class Solution:
         """
         提示：
         二叉搜索树的中序遍历序列是有序的，直接找中序遍历序列的第 k 个元素
-
         """
         # write code here
 
