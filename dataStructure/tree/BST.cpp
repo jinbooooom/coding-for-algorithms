@@ -134,14 +134,14 @@ void BST::deleteNode(int value)
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点有右结点，让该结点的右结点作为父结点的孩子，再删除该结点
+	// 要删除的结点有右结点，没左节点，让该结点的右结点作为父结点的孩子，再删除该结点
 	else if (p->left == nullptr)
 	{
 		par->left == p ? par->left = p->right : par->right = p->right;
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点有左结点，让该结点的左结点作为父结点的孩子，再删除该结点
+	// 要删除的结点有左结点，没右节点，让该结点的左结点作为父结点的孩子，再删除该结点
 	else if (p->right == nullptr)
 	{
 		par->left == p ? par->left = p->left : par->right = p->left;
