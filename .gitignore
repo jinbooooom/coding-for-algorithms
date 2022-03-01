@@ -1,3 +1,12 @@
+main
+r
+s
+t
+test
+
+# temp
+AVL.cpp
+
 push.sh
 .idea/*
 data/*
@@ -15,7 +24,6 @@ t/*
 r/*
 test/*
 doing/*
-
 
 
 

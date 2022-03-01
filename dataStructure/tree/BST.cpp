@@ -96,11 +96,11 @@ void BST::insertNode(int value)
 			return;
 	}
 
-	Node *pNode = new Node(value);
+	p = new Node(value);
 	if (value > pLeaf->data)
-		pLeaf->right = pNode;
+		pLeaf->right = p;
 	else
-		pLeaf->left = pNode;
+		pLeaf->left = p;
 }
 
 void BST::deleteNode(int value)
@@ -134,14 +134,14 @@ void BST::deleteNode(int value)
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点有右结点，没左节点，让该结点的右结点作为父结点的孩子，再删除该结点
+	// 要删除的结点只有右结点，没左节点，让该结点的右结点作为父结点的孩子，再删除该结点
 	else if (p->left == nullptr)
 	{
 		par->left == p ? par->left = p->right : par->right = p->right;
 		delete[] p;
 		p = nullptr;
 	}
-	// 要删除的结点有左结点，没右节点，让该结点的左结点作为父结点的孩子，再删除该结点
+	// 要删除的结点只有左结点，没右节点，让该结点的左结点作为父结点的孩子，再删除该结点
 	else if (p->right == nullptr)
 	{
 		par->left == p ? par->left = p->left : par->right = p->left;
@@ -191,6 +191,9 @@ Node *BST::deleteNodeSuper(Node *root, int key)
 	return root;
 }
 
+/**
+ * 在以 node 为根的 BST 中，查找 value 所在的结点。
+*/
 Node *BST::searchNode(Node *node, int value) const
 {
 	Node *p = node;
@@ -207,7 +210,9 @@ Node *BST::searchNode(Node *node, int value) const
 void BST::preOrder(Node *node) const
 {
 	if (node == nullptr)
+	{
 		return;
+	}
 	cout << node->data << " ";
 	preOrder(node->left);
 	preOrder(node->right);
