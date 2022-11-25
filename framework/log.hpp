@@ -10,6 +10,7 @@
 #include <sys/time.h>
 #include <time.h>
 
+#define unuse(x) ((x) = (x))
 #define LOG_TIME_SIZE (128)
 
 #define DEBUG (1)
@@ -70,34 +71,34 @@ static void getTimeStr(char *t)
 #else //LINUX
 
 #if (DEBUG)
-#define logi(format, ...)                                                                                           \
+#define logi(format, ...)                                                                                          \
       getTimeStr(logTime);                                                                                         \
       fprintf(stdout, "\033[1m\033[40;37m %s I [%s:%s:%d] ", logTime, FILE_NAME(__FILE__), FUNC_FORMAT, __LINE__); \
-      fprintf(stdout, format, ##__VA_ARGS__);                                                                       \
+      fprintf(stdout, format, ##__VA_ARGS__);                                                                      \
       fprintf(stdout, "\033[0m\n");
 
-#define logd(format, ...)                                                                                           \
+#define logd(format, ...)                                                                                          \
       getTimeStr(logTime);                                                                                         \
       fprintf(stdout, "\033[1m\033[40;32m %s D [%s:%s:%d] ", logTime, FILE_NAME(__FILE__), FUNC_FORMAT, __LINE__); \
-      fprintf(stdout, format, ##__VA_ARGS__);                                                                       \
+      fprintf(stdout, format, ##__VA_ARGS__);                                                                      \
       fprintf(stdout, "\033[0m\n");
 
-#define logw(format, ...)                                                                                           \
+#define logw(format, ...)                                                                                          \
       getTimeStr(logTime);                                                                                         \
       fprintf(stdout, "\033[1m\033[40;33m %s W [%s:%s:%d] ", logTime, FILE_NAME(__FILE__), FUNC_FORMAT, __LINE__); \
-      fprintf(stdout, format, ##__VA_ARGS__);                                                                       \
+      fprintf(stdout, format, ##__VA_ARGS__);                                                                      \
       fprintf(stdout, "\033[0m\n");
 
-#define loge(format, arg...)                                                                                        \
+#define loge(format, arg...)                                                                                       \
       getTimeStr(logTime);                                                                                         \
       fprintf(stdout, "\033[1m\033[40;31m %s E [%s:%s:%d] ", logTime, FILE_NAME(__FILE__), FUNC_FORMAT, __LINE__); \
-      fprintf(stdout, format, ##arg);                                                                               \
+      fprintf(stdout, format, ##arg);                                                                              \
       fprintf(stdout, "\033[0m\n");
 
-#define logmark(format, arg...)                                                                                     \
+#define logmark(format, arg...)                                                                                    \
       getTimeStr(logTime);                                                                                         \
       fprintf(stdout, "\033[1m\033[40;35m %s M [%s:%s:%d] ", logTime, FILE_NAME(__FILE__), FUNC_FORMAT, __LINE__); \
-      fprintf(stdout, format, ##arg);                                                                               \
+      fprintf(stdout, format, ##arg);                                                                              \
       fprintf(stdout, "\033[0m \n");
 
 #define login() logi("IN")

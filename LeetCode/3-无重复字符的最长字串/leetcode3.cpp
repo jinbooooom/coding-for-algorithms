@@ -46,13 +46,13 @@ public:
         position[s[0] - '\0'] = 0;  // 下面循环从 1 开始，得提前存好 s[0] 的旧索引 0
         for (int i = 1; i < s.size(); ++i)
         {
-            int preIndex = position[s[i] - '\0'];
+            int preIndex = position[s[i] - '\0']; // 如果 s[i] 之前没出现，它的位置为 -1
             int d = i - preIndex;
             if (preIndex < 0 || d > dp[i - 1])
                 dp[i] = dp[i - 1] + 1;
             else if (d <= dp[i - 1])
                 dp[i] = d;
-            position[s[i] - '\0'] = i;
+            position[s[i] - '\0'] = i; // 现在 s[i] 出现了，更新位置为 i。
         }
         int maxLength = 0;
         for (int i = 0; i < dp.size(); ++i)

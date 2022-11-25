@@ -18,6 +18,7 @@ data/*
 .*/.vscode/*
 .vscode
 **/ConsoleApplication1/*
+*.out
 C++
 
 t/*

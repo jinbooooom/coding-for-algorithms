@@ -7,11 +7,11 @@ https://blog.csdn.net/u013166817/article/details/85449218
 你不可以将物品进行切割。
 
 样例 1:
-    输入:  [3,4,8,5], backpack n = 10
+    输入:  [3,4,8,5], backpack m = 10
     输出:  9
 
 样例 2:
-    输入:  [2,3,5,7], backpack n = 12
+    输入:  [2,3,5,7], backpack m = 12
     输出:  12
 
 """

@@ -19,7 +19,8 @@
     每个物品只能取一次
 */
 
-class Solution {
+class Solution
+{
 public:
     /**
      * @param m: An integer m denotes the size of a backpack
@@ -27,14 +28,15 @@ public:
      * @param V: Given n items with value V[i]
      * @return: The maximum value
      */
-    int backPackII(int m, vector<int> &A, vector<int> &V) {
+    int backPackII(int m, vector<int> &A, vector<int> &V)
+    {
         // write your code here
         int n = A.size();
         if (m <= 0 || A.empty() || V.empty())
             return 0;
         vector<int> dp(m + 1, 0);
         for (int i = 0; i < n; ++i)
-            for (int j = m; j >= A[i]; --j)
+            for (int j = m; j >= A[i]; --j) // 01 背包，所以以容量的 for 循环 j 是从大到小递增
                 dp[j] = max(dp[j], dp[j - A[i]] + V[i]);
         return dp[m];
     }

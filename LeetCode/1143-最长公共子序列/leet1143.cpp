@@ -33,21 +33,23 @@ https://leetcode-cn.com/problems/longest-common-subsequence/solution/dong-tai-gu
 解释：两个字符串没有公共子序列，返回 0。
 */
 
-class Solution {
+class Solution
+{
 public:
-    int longestCommonSubsequence(string text1, string text2) {
-    /*
-    令 dp[i][j] 为 text1 的前 i 个字符（含）组成的字符串与 text2 的前 j 个字符（含）组成的字符串的最长公共子串
-    当 text1 中第 i 个字符（索引 i-1）与 text2 中第 j 个字符（索引 j-1）相等时，即
-    text[i - 1] == text[j - 1] 时，dp[i][j] = dp[i - 1][j - 1] + 1，
-    反之，dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
-    */
+    int longestCommonSubsequence(string text1, string text2)
+    {
+        /*
+        令 dp[i][j] 为 text1 的前 i 个字符（含）组成的字符串与 text2 的前 j 个字符（含）组成的字符串的最长公共子序列
+        当 text1 中第 i 个字符（索引 i-1）与 text2 中第 j 个字符（索引 j-1）相等时，即
+        text[i - 1] == text[j - 1] 时，dp[i][j] = dp[i - 1][j - 1] + 1，
+        反之，dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+        */
         if (text1.empty() || text2.empty())
             return 0;
 
         int len1 = text1.size();
         int len2 = text2.size();
-        vector<vector<int> > dp(len1 + 1, vector<int>(len2 + 1, 0));
+        vector<vector<int>> dp(len1 + 1, vector<int>(len2 + 1, 0));
 
         for (int i = 1; i <= len1; ++i)
             for (int j = 1; j <= len2; ++j)
@@ -58,6 +60,3 @@ public:
         return dp[len1][len2];
     }
 };
-
-
-

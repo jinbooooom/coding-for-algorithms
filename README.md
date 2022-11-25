@@ -126,6 +126,11 @@
 | [摆动排序](https://github.com/jinbooooom/coding-for-algorithms/tree/master/LeetCode/324-%E6%91%86%E5%8A%A8%E6%8E%92%E5%BA%8F2) | [力扣-324](https://leetcode-cn.com/problems/wiggle-sort-ii/) | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/LeetCode/324-%E6%91%86%E5%8A%A8%E6%8E%92%E5%BA%8F2/wiggle-sort-ii.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/LeetCode/324-%E6%91%86%E5%8A%A8%E6%8E%92%E5%BA%8F2/main324.cpp) |  排序  |  2   |
 
 ### 动态规划
+
+【注】
+
+子序列不要求连续，子串要求连续
+
 |                             题目                             |                           题目出处                           |                             实现                             |                             实现                             |    知识点    | 难度 |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------: | :--: |
 | [剪绳子](https://github.com/jinbooooom/coding-for-algorithms/tree/master/%E5%89%91%E6%8C%87offer/14-%E5%89%AA%E7%BB%B3%E5%AD%90) | [剑指-14](https://www.nowcoder.com/practice/57d85990ba5b440ab888fc72b0751bf8?tpId=13&tqId=33257&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking) | [Python](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/14-%E5%89%AA%E7%BB%B3%E5%AD%90/maxCut.py) | [C++](https://github.com/jinbooooom/coding-for-algorithms/blob/master/%E5%89%91%E6%8C%87offer/14-%E5%89%AA%E7%BB%B3%E5%AD%90/JZ14.cpp) |              |  1   |

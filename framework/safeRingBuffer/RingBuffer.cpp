@@ -26,7 +26,7 @@ RingBuffer::~RingBuffer()
 */
 int RingBuffer::size()
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
     /**
      * when mRear > mFront:
      * size = mRear - mFront
@@ -49,7 +49,7 @@ int RingBuffer::size()
 */
 int RingBuffer::capacity()
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
     return mAllocSize - 1;
 }
 
@@ -58,7 +58,7 @@ int RingBuffer::capacity()
 */
 void RingBuffer::resize(int len)
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
 
     if (len + 1 == mAllocSize)
     {
@@ -84,7 +84,7 @@ void RingBuffer::resize(int len)
 */
 bool RingBuffer::empty()
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
     return mFront == mRear;
 }
 /**
@@ -92,7 +92,7 @@ bool RingBuffer::empty()
 */
 void RingBuffer::clear()
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
     mFront = 0;
     mRear = 0;
 }
@@ -103,7 +103,7 @@ void RingBuffer::clear()
 */
 int RingBuffer::push(byte_t *data, int len)
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex); // 这里可以
 
     int ret = 0;
     /**
@@ -163,7 +163,7 @@ int RingBuffer::push(byte_t *data, int len)
 */
 int RingBuffer::get(byte_t *data, int len)
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
 
     int ret = 0;
 
@@ -223,7 +223,7 @@ int RingBuffer::get(byte_t *data, int len)
 */
 int RingBuffer::free_size()
 {
-    std::unique_lock<std::mutex> lock(mMutex);
+    std::lock_guard<std::mutex> lock(mMutex);
 
     if (mRear >= mFront)
     {

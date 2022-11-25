@@ -18,7 +18,7 @@ class Solution:
     """
     @param nums: an integer array and all positive numbers, no duplicates
     @param target: An integer
-    @return: An integer
+    @return: An integere
     """
     def backPackIV(self, nums, target):
         """

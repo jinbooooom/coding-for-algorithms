@@ -13,19 +13,20 @@ https://leetcode-cn.com/problems/maximum-product-subarray
 解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。
 */
 
-
-class Solution {
+class Solution
+{
 public:
-    int maxProduct(vector<int>& nums) {
-    /*
-    对于乘法，需要注意，负数乘以负数，会变成正数，所以处理起来，跟连续子数组的最大和不太一样。
-    dp_max[i]：以索引为 i 的数结尾的连续子数组的最大积;
-    dp_min[i]：以索引为 i 的数结尾的连续子数组的最小积;
+    int maxProduct(vector<int> &nums)
+    {
+        /**
+        对于乘法，需要注意，负数乘以负数，会变成正数，所以处理起来，跟连续子数组的最大和不太一样。
+        dp_max[i]：以索引为 i 的数结尾的连续子数组的最大积;
+        dp_min[i]：以索引为 i 的数结尾的连续子数组的最小积;
 
-    状态转移方程为：
-    dp_min[i] = min(nums[i], min(dp_min[i - 1] * nums[i], dp_max[i - 1] * nums[i]));
-    dp_max[i] = max(nums[i], max(dp_min[i - 1] * nums[i], dp_max[i - 1] * nums[i]));
-    */
+        状态转移方程为：
+        dp_min[i] = min(nums[i], min(dp_min[i - 1] * nums[i], dp_max[i - 1] * nums[i]));
+        dp_max[i] = max(nums[i], max(dp_min[i - 1] * nums[i], dp_max[i - 1] * nums[i]));
+        */
         if (nums.empty())
             return 0;
         if (nums.size() == 1)

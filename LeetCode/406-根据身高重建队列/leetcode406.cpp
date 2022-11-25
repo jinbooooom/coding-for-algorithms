@@ -19,22 +19,22 @@ https://leetcode-cn.com/problems/queue-reconstruction-by-height
 class Solution
 {
 public:
-	vector<vector<int>> reconstructQueue(vector<vector<int>>& people)
+	vector<vector<int>> reconstructQueue(vector<vector<int>> &people)
 	{
-	/*
-	思路：
-	按第一个元素（身高）降序排序，第二个元素（人数）升序排序。
-	再将第二个元素的位置将元素插入到数组中，画个图就全部明白了。
-	*/
+		/*
+		思路：
+		按第一个元素（身高）降序排序，第二个元素（人数）升序排序。
+		再将第二个元素的位置将元素插入到数组中，画个图就全部明白了。
+		*/
 		// 身高降序排列，人数升序排列
 		sort(people.begin(), people.end(), cmp);
-		vector<vector<int> > res;
+		vector<vector<int>> res;
 		for (int i = 0; i < people.size(); i++)
 			res.insert(res.begin() + people[i][1], people[i]);
 		return res;
 	}
 
-	static bool cmp(const vector<int>& a, const vector<int>& b) // 自定义的比较规则 cmp 得是静态成员函数
+	static bool cmp(const vector<int> &a, const vector<int> &b) // 自定义的比较规则 cmp 得是静态成员函数
 	// a, b 均是一个数对，按第一个元素（身高）降序排序，第二个元素（人数）升序排序
 	{
 		if (a[0] > b[0])
